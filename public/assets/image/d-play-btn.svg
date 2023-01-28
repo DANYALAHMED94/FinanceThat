@@ -1,0 +1,11 @@
+<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="play">
+<path id="Button" fill-rule="evenodd" clip-rule="evenodd" d="M38 19C38 8.50659 29.4934 0 19 0C8.50659 0 0 8.50659 0 19C0 29.4934 8.50659 38 19 38C29.4934 38 38 29.4934 38 19Z" fill="#3F2355"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="38" height="38">
+<path id="Button_2" fill-rule="evenodd" clip-rule="evenodd" d="M38 19C38 8.50659 29.4934 0 19 0C8.50659 0 0 8.50659 0 19C0 29.4934 8.50659 38 19 38C29.4934 38 38 29.4934 38 19Z" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M17.8641 13.6492C17.1852 13.2062 16.2856 13.6932 16.2856 14.5039L16.2856 22.5912C16.2856 23.4018 17.1852 23.8889 17.8641 23.4458L24.0593 19.4022C24.6763 18.9995 24.6763 18.0956 24.0593 17.6929L17.8641 13.6492Z" fill="white"/>
+</g>
+</g>
+</svg>

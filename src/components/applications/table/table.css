@@ -1,0 +1,76 @@
+.status{
+    background: #D1E2FB;
+    border-radius: 65px;
+    padding: 4px 10px;
+}
+
+.heading{
+    padding: 15px;
+}
+
+.deleteSelected{
+    float: right !important;
+}
+.inline{
+display: -webkit-inline-box;
+line-height: 30px;
+}
+.inline label{
+    padding: 4px;
+    }
+.searchBtn{
+    margin-left: 6px;
+width: 75px;
+height: 40px;
+border: 0ch;
+background: #FB5100;
+border-radius: 4px;
+}
+/* .spaceBetween{
+    flex-direction: row;
+justify-content: space-between;
+} */
+.deleteSelected{
+    background: #fb5100;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 132px;
+    height: 40px;
+    color: #ffffff;
+}
+/* .Title{
+    position: absolute;
+    width: 429px;
+    height: 32px;    
+    font-family: Basis Grotesque Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 124%;    
+    display: flex;
+    align-items: center;    
+    color: #3F2355;
+} */
+
+ul.customepagination{
+    float: left !important;
+    margin: 0px 0 30px 0 !important;
+  }
+  .customepagination .page-link {
+    border-radius: 15px;
+  }
+
+  .customepagination .page-item:first-child .page-link {
+    width: 15px;
+  }
+
+  .detaillinkbtn{
+    color: #fb5100;
+    background: #F9D9CC;
+    border-radius: 65px;
+    padding: 4px 17px;
+  }
+  .deletelinkbtn{
+    color: #FF0000;
+  }

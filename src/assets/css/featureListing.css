@@ -1,0 +1,185 @@
+.flexCenter{
+    display: flex;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.flexBetweenCenter{
+ display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+.feature-list-tabs{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+.hp-featured-vehicle .featuredCard{
+    width: 320px ;
+    height: auto;
+    border-radius: 8px;
+    position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+
+
+
+}
+.hp-featured-vehicle .mainViewFlex{
+ display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.hp-featured-vehicle .featuredCard .distanceTag{
+ padding: 4px 8px ;
+ color: #FB5100;
+ background-color: #F9D9CC;
+    border-radius: 8px;
+ position: absolute;
+ top: 10px;
+ left: 10px;
+  font: 10px "basis_grotesque_probold";
+
+}
+.hp-featured-vehicle .featuredCard .like{
+    height: 23px;
+    width: 23px;
+ color: #3F2355;
+ background-color: rgba(255, 255, 255, 0.8);
+ border-radius: 50%;
+ position: absolute;
+ top: 10px;
+ right: 10px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+transition: all ease-in 0.3s;
+font-size: 10px;
+cursor: pointer;}
+.hp-featured-vehicle .featuredCard .like:hover{
+ background-color: #F9D9CC;
+}
+.hp-featured-vehicle .featuredCard .like.active{
+ background-color: #F9D9CC;
+ color: #FB5100;
+}
+.hp-featured-vehicle .featuredCard .cover {
+width: 100%;
+border-radius: 8px;
+  height: 215px;
+  object-fit: cover;
+}
+.hp-featured-vehicle .featuredCard .detail {
+margin: 10px 0 ;
+}
+.hp-featured-vehicle .featuredCard h1 {
+font: 16px "BasisGrotesquePro-Medium";
+margin: 0;
+}
+.hp-featured-vehicle .featuredCard h2 {
+font: 18px "basis_grotesque_probold";
+color: #FB5100;
+margin: 0;
+}
+.hp-featured-vehicle .featuredCard .location ~ span {
+font: 12px "BasisGrotesquePro-Medium";
+color: #3F2355;
+}
+.hp-featured-vehicle .featuredCard .location {
+width: 20px;
+height: 20px;
+border-radius: 50%;
+/* background-color: #3F2254; */
+/* color: #fff; */
+color:#3F2254;
+/* font-size: 12px; */
+font-size: 14px;
+display: flex;
+justify-content: center;
+align-items: center;
+/* margin-right: 8px; */
+}
+
+
+.hp-featured-vehicle .sliderFooter button {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-color: #fb5100;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.hp-featured-vehicle .sliderFooter {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hp-featured-vehicle .action .footerText {
+  color: #3f2355;
+  font: 13px "BasisGrotesquePro-Medium";
+  text-align: center;
+}
+.hp-featured-vehicle .sliderWrapper  {
+width: 100%;
+}
+
+
+
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+.hp-featured-vehicle .featuredCard{
+    width: 269px ;
+  margin: 15px 15px 0 0;
+
+}
+.hp-featured-vehicle .featuredCard .cover{
+    height: 180px;
+
+}
+
+.hp-featured-vehicle .featuredCard .detail {
+margin: 10px 0 ;
+}
+.hp-featured-vehicle .featuredCard h1 {
+font: 14px "BasisGrotesquePro-Medium";
+}
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 910px) { 
+  .hp-featured-vehicle .featuredCard{
+    width: 320px ;
+  margin: 15px 15px 0 0;
+}
+ .hp-featured-vehicle .featuredCard .cover{
+    height: 215px;
+}
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .hp-featured-vehicle .featuredCard{
+    width: 269px ;
+  margin: 15px 15px 0 0;
+
+}
+.hp-featured-vehicle .featuredCard .cover{
+    height: 180px;
+
+}
+  }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }

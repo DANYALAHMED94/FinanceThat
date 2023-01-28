@@ -1,0 +1,4203 @@
+@font-face {
+    font-family: "basis_grotesque_proregular";
+    src: url("../fonts/basisgrotesquepro-regular-webfont.woff2") format("woff2"), url("../fonts/basisgrotesquepro-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "basis_grotesque_prolight";
+    src: url("../fonts/basisgrotesquepro-light-webfont.woff2") format("woff2"), url("../fonts/basisgrotesquepro-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "basis_grotesque_probold";
+    src: url("../fonts/basisgrotesquepro-bold-webfont.woff2") format("woff2"), url("../fonts/basisgrotesquepro-bold-webfont.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "BasisGrotesquePro-Medium";
+    src: url("../fonts/BasisGrotesquePro-Medium.woff") format("woff"), url("../fonts/BasisGrotesquePro-Medium.woff2") format("woff2"), url("../fonts/BasisGrotesquePro-Medium.svg#BasisGrotesquePro-Medium") format("svg"),
+        url("../fonts/BasisGrotesquePro-Medium.eot"), url("../fonts/BasisGrotesquePro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/BasisGrotesquePro-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.bodyColor {
+    background: #fafafa;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    clear: both;
+    overflow: auto;
+}
+.AdminHeader {
+    margin: 0;
+    padding: 0 45px 0 30px;
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid rgba(63, 35, 85, 0.1);
+    box-sizing: border-box;
+    box-shadow: 0px 12px 40px rgba(31, 37, 57, 0.02);
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.borderonly {
+    margin: 20px 0 20px 0;
+    border-bottom: 1px solid #eaeaeb;
+}
+.AdminTop-Container {
+    margin: 0;
+    padding: 0;
+}
+.AdminTop-Container .AdminLogo {
+    margin: 13px 0 13px 0;
+    padding: 0;
+    float: left;
+}
+.AdminTop-Container .AdminLogo img {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+}
+.AdminTop-Container .PrMenu-Side {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.dropdown-menu {
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    opacity: 0;
+    display: block;
+    width: 100%;
+    border: none;
+}
+.show .dropdown-menu {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+    width: 100%;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.06));
+    background: #fbfbfb;
+    border: 0.5px solid #e9e9eb;
+    margin-top: 15px;
+}
+.ProfHead {
+    margin: 6px 0 0 0;
+    padding: 3px 0 0 22px;
+    border: 0.5px solid #e9e9eb;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #fbfbfb;
+    width: 243px;
+    height: 40px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+}
+.ProfHead:hover {
+    text-decoration: none;
+}
+.ProfHead img {
+    margin: 0;
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+}
+.ProfHead span {
+    margin: 0;
+    padding: 2px 0 0 14px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3f2355;
+    text-decoration: none;
+    text-align: left;
+    font-family: "BasisGrotesquePro-Medium";
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+.ProfHead span::after {
+    background: url(../image/pr-arrow-down.svg) no-repeat left center;
+    content: "";
+    width: 24px;
+    height: 9px;
+    background-size: 20px;
+    position: absolute;
+    right: -26px;
+    right: -106px;
+    top: 10px;
+    z-index: 99;
+}
+.admin-menu-container .Profiledropdown .btn {
+    margin: 6px 0 0 0;
+    padding: 3px 0 0 22px;
+    border: 0.5px solid #e9e9eb;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #fbfbfb;
+    width: 243px;
+    height: 40px;
+    display: flex;
+    text-align: left;
+    text-decoration: none;
+}
+.admin-menu-container .Profiledropdown .btn img {
+    margin: 4px 0 0 0;
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+}
+.admin-menu-container .Profiledropdown .btn span {
+    margin: 0;
+    padding: 0px 0 0 14px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3f2355;
+    text-decoration: none;
+    text-align: left;
+    font-family: "BasisGrotesquePro-Medium";
+    display: inline-block;
+    line-height: 35px;
+}
+.admin-menu-container .Profiledropdown .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0;
+    vertical-align: middle;
+    content: "";
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    background: url(../image/pr-arrow-down.svg) no-repeat right center;
+    height: 14px;
+    width: 18px;
+    position: absolute;
+    top: 14px;
+    right: 22px;
+    z-index: 999;
+}
+.admin-menu-container .Profiledropdown .dropdown.show .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0;
+    vertical-align: middle;
+    border-bottom: 0;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    background: url(../image/pr-arrow-up.svg) no-repeat right center;
+    height: 14px;
+    width: 18px;
+}
+.admin-menu-container .Profiledropdown .dropdown-menu {
+    background-color: #fbfbfb;
+    border-radius: 0px 0px 10px 10px;
+    border: 0.5px solid #e9e9eb;
+    border-top: 0.5px solid transparent;
+    box-shadow: none;
+    margin: 8px 0 0 0 !important;
+    padding: 8px 30px 8px 22px;
+    transform: translate(0px, 32px) !important;
+}
+.admin-menu-container .show .dropdown-menu {
+    box-shadow: none;
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.06));
+}
+.admin-menu-container .Profiledropdown .btn-primary:not(:disabled):not(.disabled).active,
+.admin-menu-container .Profiledropdown .btn-primary:not(:disabled):not(.disabled):active,
+.admin-menu-container .show > .btn-primary.dropdown-toggle {
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    border: 0.5px solid #e9e9eb;
+    border-bottom: 0.5px solid transparent;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.admin-menu-container .Profiledropdown .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 2px 0 0px 0px;
+    clear: both;
+    font-weight: 500;
+    color: #000;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-style: normal;
+    font-size: 16px;
+    font-family: "BasisGrotesquePro-Medium";
+    border-bottom: 1px solid #e6e6e6;
+    height: 45px;
+}
+.admin-menu-container .Profiledropdown .dropdown-item img {
+    margin: -3px 10px 0 0px;
+    padding: 0;
+    max-width: 100%;
+    height: 20px;
+}
+.PrMenu-Side .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 6px 20px;
+    clear: both;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-family: "basis_grotesque_proregular";
+    font-weight: 400;
+    font-size: 16px;
+    color: #3f2355;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.PrMenu-Side .dropdown-menu {
+    padding: 0;
+    border-radius: 10px;
+}
+.PrMenu-Side .dropdown-menu::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    top: -12px;
+}
+.PrMenu-Side .dropdown-menu::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    top: -11px;
+}
+.PrMenu-Side .NotifyCon {
+    margin: 6px 0 0 0;
+    padding: 0 0 16px 0;
+    left: -378px;
+    width: 400px;
+}
+.Notify-icon {
+    margin: 0 0 0 0;
+    padding: 0 35px 0 0px;
+    position: relative;
+}
+.Notify-icon:hover {
+    text-decoration: none;
+}
+.Notify-icon img {
+    margin: 18px 0 0 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+}
+.Notify-icon span {
+    background: #ea5455;
+    height: 16px;
+    width: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 12px;
+    top: 6px;
+    z-index: 99;
+    text-align: center;
+    line-height: 16px;
+}
+.PrMenu-Side .NotifyCon a {
+    text-decoration: none;
+    color: transparent;
+    outline: none;
+}
+.admin-notify-inner-container {
+    display: flex;
+    padding: 16px 17px 0px 21px;
+}
+.admin-notify-inner-container h1,
+.admin-notify-inner-container h2 {
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+    text-decoration: none;
+    color: #3f2355;
+    line-height: 16.56px;
+    margin: 0;
+    width: 70%;
+}
+.admin-notify-inner-container h2 {
+    color: #fb5100;
+    text-align: right;
+    width: 30%;
+}
+.asideMenu {
+    margin: 0;
+    padding: 0;
+    max-width: 220px;
+    width: 100%;
+    background: #fff;
+    float: left;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 70px;
+    z-index: 99;
+}
+ul.menu {
+    padding: 0 16px;
+    list-style: none;
+    width: 220px;
+    margin: 40px auto;
+    box-shadow: none;
+    clear: both;
+    display: table;
+    margin-bottom: 100px;
+}
+ul.menu .DashIcon,
+ul.menu .AppIcon,
+ul.menu .AccountIcon,
+ul.menu .ListIcon,
+ul.menu .AgentIcon,
+ul.menu .SettingIcon {
+    position: relative;
+}
+ul.menu .DashIcon::before {
+    background: url(../image/sprite-icon/icon-dashboard.svg) no-repeat left top;
+    content: "";
+    height: 20px;
+    width: 26px;
+    background-size: 100%;
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    z-index: 99;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+ul.menu .DashIcon:hover::before,
+ul.menu .active > .DashIcon::before {
+    background: url(../image/sprite-icon/icon-dashboard.svg) no-repeat left bottom;
+    content: "";
+    height: 20px;
+    width: 26px;
+    background-size: 100%;
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    z-index: 99;
+}
+ul.menu .AppIcon::before {
+    background: url(../image/sprite-icon/icon-application.svg) no-repeat left top;
+    content: "";
+    height: 25px;
+    width: 25px;
+    background-size: 90%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 99;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+ul.menu .AppIcon:hover::before,
+ul.menu .active .AppIcon::before {
+    background: url(../image/sprite-icon/icon-application.svg) no-repeat left bottom;
+    content: "";
+    height: 25px;
+    width: 25px;
+    background-size: 90%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 99;
+}
+ul.menu .AccountIcon::before {
+    background: url(../image/sprite-icon/icon-account.svg) no-repeat left top;
+    content: "";
+    height: 26px;
+    width: 25px;
+    background-size: 90%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 99;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+ul.menu .AccountIcon:hover::before,
+ul.menu .active .AccountIcon::before {
+    background: url(../image/sprite-icon/icon-account.svg) no-repeat left bottom;
+    content: "";
+    height: 26px;
+    width: 25px;
+    background-size: 90%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 99;
+}
+ul.menu .ListIcon::before {
+    background: url(../image/sprite-icon/icon-listing.svg) no-repeat left top;
+    content: "";
+    height: 23px;
+    width: 24px;
+    background-size: 90%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 99;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+ul.menu .ListIcon:hover::before,
+ul.menu .active .ListIcon::before {
+    background: url(../image/sprite-icon/icon-listing.svg) no-repeat left bottom;
+    content: "";
+    height: 23px;
+    width: 24px;
+    background-size: 90%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 99;
+}
+ul.menu .AgentIcon::before {
+    background: url(../image/sprite-icon/icon-agents.svg) no-repeat left top;
+    content: "";
+    height: 24px;
+    width: 24px;
+    background-size: 90%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 99;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+ul.menu .AgentIcon:hover::before,
+ul.menu .active .AgentIcon::before {
+    background: url(../image/sprite-icon/icon-agents.svg) no-repeat left bottom;
+    content: "";
+    height: 24px;
+    width: 24px;
+    background-size: 90%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 99;
+}
+ul.menu .SettingIcon::before {
+    background: url(../image/sprite-icon/icon-setting.svg) no-repeat left top;
+    content: "";
+    height: 24px;
+    width: 25px;
+    background-size: 90%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 99;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+ul.menu .SettingIcon:hover::before,
+ul.menu .active .SettingIcon::before {
+    background: url(../image/sprite-icon/icon-setting.svg) no-repeat left bottom;
+    content: "";
+    height: 24px;
+    width: 25px;
+    background-size: 90%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 99;
+}
+ul.menu .list .PendingHead,
+ul.menu .list .ApprovedHead,
+ul.menu .list .SoldHead,
+ul.menu .list .ArchiveHead {
+    font-weight: 500;
+    font-size: 14px;
+    color: #2f80ed;
+    text-align: left;
+    text-decoration: none;
+}
+ul.menu .list.dms a:after {
+    display: none;
+}
+ul.menu .list .ApprovedHead {
+    color: #81db0f;
+}
+ul.menu .list .SoldHead {
+    color: #05d0b5;
+}
+ul.menu .list .ArchiveHead {
+    color: darkgrey;
+}
+ul.menu .list .PendingHead::before {
+    content: "";
+    background: #2f80ed;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 15px;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+ul.menu .list .ApprovedHead::before {
+    content: "";
+    background: #81db0f;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 15px;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+ul.menu .list .SoldHead::before {
+    content: "";
+    background: #05d0b5;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 15px;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+ul.menu .list .ArchiveHead::before {
+    content: "";
+    background: darkgrey;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 15px;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+ul.menu .list .PendingHead:hover::before,
+ul.menu .list .ApprovedHead:hover::before,
+ul.menu .list .ArchiveHead:hover::before {
+    background: #fb5100;
+}
+ul.menu .list {
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    height: 48px;
+    vertical-align: sub;
+    background: #fff;
+    clear: both;
+    line-height: 12px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+ul.menu .list a::after {
+    content: "";
+    font-family: FontAwesome;
+    padding: 0px 17px;
+    float: right;
+    color: #aaabad;
+    font-size: 24px;
+}
+ul.menu .list a:hover::after,
+ul.menu .list a:active::after {
+    color: #fff;
+}
+ul.menu .list a {
+    text-decoration: none;
+    padding: 19px 0px 17px 45px;
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    color: #644e77;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "BasisGrotesquePro-Medium";
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+ul.menu .list a.DashIcon::after,
+ul.menu .list a.AgentIcon::after,
+ul.menu .list a.SettingIcon::after {
+    display: none;
+}
+ul.menu .list a:hover {
+    background-color: #fb5100;
+    transition: 300ms all;
+    color: #fff;
+    border-radius: 10px;
+}
+ul.menu .list .items {
+    height: 0px;
+    overflow: hidden;
+}
+ul.menu .list .items a {
+    padding: 13px 20px;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+ul.menu .list .items a.active {
+    color: #fb5100;
+}
+ul.menu .list .PendingHead.active::before,
+ul.menu .list .ApprovedHead.active::before,
+ul.menu .list .SoldHead.active::before,
+ul.menu .list .ArchiveHead.active::before {
+    background: #fb5100;
+}
+ul.menu .list .items a:hover {
+    background: transparent;
+    color: #fb5100;
+    transition: 300ms all;
+}
+ul.menu .list:last-child {
+    border-bottom: none;
+}
+ul.menu .list:nth-child(1)::after,
+ul.menu .list:nth-child(5)::after,
+ul.menu .list:nth-child(6)::after {
+    color: #fff;
+    opacity: 0;
+}
+ul.menu > .active a:after {
+    content: "";
+    font-family: FontAwesome;
+    padding: 0px 17px;
+    color: #fff;
+}
+ul.menu .active > .items {
+    display: block;
+    background: #fff;
+    padding: 0px;
+    height: auto;
+    color: #fff;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ul.menu .active > .items li {
+    padding: 0px;
+    border-bottom: none;
+    list-style: none;
+}
+ul.menu .active > .items li:last-child {
+    border-color: transparent;
+    padding-bottom: 0px;
+}
+ul.menu .active > .items .active > .items {
+    background-color: #2f4b67;
+}
+ul.menu .active > a {
+    background-color: #fb5100;
+    color: #fff;
+    border-radius: 10px;
+}
+ul.menu .active .list {
+    background: #697d92;
+}
+ul.menu .active .list a {
+    padding: 17px 0px 17px 45px;
+}
+.MainBody {
+    margin: 100px 0 0 250px;
+    padding: 0 30px 0 0;
+}
+.MainBodyDealerApplication {
+    margin: 100px 0 0 0;
+}
+.NewApp-Container {
+    margin: 0 30px 0 0px;
+    padding: 20px;
+    float: left;
+    background: #fff;
+    border-radius: 10px;
+    width: 457px;
+    border: 1px solid #eaeaeb;
+}
+.Admin-NewApp {
+    margin: 0 0 20px 0;
+    padding: 0px 0 12px 0;
+    border-bottom: 1px solid #eaeaeb;
+}
+.Admin-NewApp::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.Admin-NewApp .NewApp-Left,
+.Admin-NewApp .NewApp-Right {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.Admin-NewApp .NewApp-Left h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 12px;
+    color: #3f2355;
+    text-align: left;
+    text-decoration: none;
+}
+.Admin-NewApp .NewApp-Right {
+    float: right;
+    margin-top: 3px;
+}
+.Admin-NewApp .NewApp-Right h2 {
+    margin: 0;
+    padding: 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 12px;
+    color: #828385;
+    text-align: left;
+    text-decoration: none;
+}
+.Admin-ContentBox {
+    margin: 0 0 16px 0;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #eeeef0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.JhonDoe-Container {
+    margin: 0 0 19px 0;
+    padding: 0;
+}
+.JhonDoe-Container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.JhonDoe-Container .JhonHead-Left,
+.JhonDoe-Container .JhonHead-Right {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.JhonDoe-Container .JhonHead-Left h3 {
+    margin: 0;
+    padding: 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 16px;
+    color: #3f2355;
+    text-align: left;
+    text-decoration: none;
+}
+.JhonDoe-Container .JhonHead-Left h4 {
+    margin: 5px 0 0 0;
+    padding: 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 12px;
+    color: #3f2355;
+    text-align: left;
+    text-decoration: none;
+    line-height: 12px;
+}
+.JhonDoe-Container .JhonHead-Left h4 span {
+    color: #828385;
+}
+.JhonDoe-Container .JhonHead-Right {
+    float: right;
+}
+.JhonDoe-Container .JhonHead-Right h5,
+.JhonDoe-Container .JhonHead-Left h5 {
+    margin: 0px 0 0 0;
+    padding: 0;
+    font-family: "basis_grotesque_proregular";
+    font-weight: 500;
+    font-size: 12px;
+    color: #828385;
+    text-align: left;
+    text-decoration: none;
+    line-height: 15px;
+}
+.JhonDoe-Container .JhonHead-Right a {
+    margin: -6px 0 0 0;
+    padding: 0;
+    background: #fbe8e0;
+    border-radius: 65px;
+    border: none;
+    outline: none;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    width: 77px;
+    height: 28px;
+    color: #fb5100;
+    line-height: 28px;
+    display: block;
+    cursor: pointer;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.JhonDoe-Container .JhonHead-Right a:hover,
+.JhonDoe-Container .JhonHead-Right a:focus,
+.JhonDoe-Container .JhonHead-Right a:active {
+    background: #3f2355;
+    color: #fff;
+}
+.ViewAll-Btn {
+    margin: 30px 0 0 0;
+    padding: 0;
+}
+.ViewAll-Btn a {
+    margin: 0;
+    padding: 0;
+    background: #fb7333;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 38px;
+    display: block;
+    width: 100%;
+    height: 38px;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.ViewAll-Btn a:hover,
+.ViewAll-Btn a:focus,
+.ViewAll-Btn a:active {
+    background: #3f2355;
+    color: #fff;
+}
+.NewList-Container {
+    margin: 30px 0 50px 0;
+    padding: 20px 0;
+    background: #fff;
+    border-radius: 5px;
+    width: 944px;
+    clear: both;
+    border: 1px solid #eaeaeb;
+    float: left;
+}
+.NewList-ConHead {
+    margin: 0;
+    padding: 0 20px 20px 14px;
+}
+.NewList-ConHead::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.NewList-ConHead .ListHead-Left,
+.NewList-ConHead .ListHead-Right {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.NewList-ConHead .ListHead-Left h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+    text-decoration: none;
+    color: #3f2355;
+}
+.NewList-ConHead .ListHead-Right {
+    float: right;
+    margin-top: 4px;
+}
+.NewList-ConHead .ListHead-Right h2 {
+    margin: 0;
+    padding: 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+    text-decoration: none;
+    color: #828385;
+}
+.ListTable {
+    margin: 0;
+    padding: 0;
+}
+.ListTable thead {
+    border-bottom: 1px solid #f4f4f4;
+    border-top: 1px solid #f4f4f4;
+}
+.ListTable tr th {
+    font-size: 14px;
+    color: #828385;
+    font-family: "basis_grotesque_proregular";
+    font-weight: 500;
+    padding: 13px 0px;
+    text-transform: uppercase;
+}
+.ListTable tr th span {
+    font-size: 14px;
+    color: #3f2355;
+    font-family: "basis_grotesque_proregular";
+}
+.monthly__label {
+    font-size: 20px !important;
+}
+.hgg {
+    width: 128px !important;
+    margin-left: 10px !important;
+}
+.ghh {
+    width: 82px !important;
+}
+.Approved {
+    margin: 0;
+    padding: 0;
+    background: #d4f7a7 !important;
+    border-radius: 65px;
+    border: none;
+    outline: none;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    text-decoration: none;
+    color: #6cbe03;
+    width: 142px;
+    height: 28px;
+    line-height: 28px;
+}
+.ListTable tr td {
+    font-size: 14px;
+    color: #828385;
+    font-weight: 500;
+    font-family: "basis_grotesque_proregular";
+    padding: 13px 0px;
+}
+.ListTable tr td span {
+    color: #3f2355;
+}
+.ListTable tr:nth-child(even) {
+    background: #f5f7fa;
+}
+.ListTable a {
+    margin: 14px 0px 11px 0;
+    padding: 0 1px;
+    background: #fbe8e0;
+    border-radius: 65px;
+    border: none;
+    outline: none;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    width: 80%;
+    height: 28px;
+    color: #fb5100;
+    line-height: 28px;
+    display: block;
+    cursor: pointer;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.ListTable a:hover,
+.ListTable a:focus,
+.ListTable a:active {
+    background: #3f2355;
+    color: #fff;
+}
+.ListCheckBox {
+    display: inline-block;
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 13px;
+    margin-left: 13px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.content3{
+color: rgb(102, 112, 133);
+line-height: 24px;
+font-family: "basis_grotesque_proregular";
+}
+.ListCheckBox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.gkg{
+display: flex;
+align-items: center;
+}
+.content1{
+    padding-right: 113px;
+}
+.content11{
+    padding-right: 220px;
+}
+.label__color{
+line-height: 24px;
+}
+.alignn{
+align-items: baseline;
+}
+/* .switch__css{
+    position: absolute;
+    left: -58%;
+    top: 18%;
+
+} */
+.ListMark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background: #fbfbfb;
+    border: 0.5px solid #e6e6e6;
+    border-radius: 4px;
+}
+.ListCheckBox:hover input ~ .ListMark {
+    background-color: #fbfbfb;
+}
+.ListCheckBox input:checked ~ .ListMark {
+    background-color: #fb5100;
+}
+.ListMark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.ListCheckBox input:checked ~ .ListMark:after {
+    display: block;
+}
+.ListCheckBox .ListMark:after {
+    left: 5px;
+    top: 1px;
+    width: 6px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0px 3px 3px 0;
+    border-radius: 2px;
+    -ms-transform: rotate(39deg);
+    transform: rotate(39deg);
+}
+.ListView-Btn {
+    margin: 20px 20px 0 20px;
+    padding: 0;
+}
+.ListView-Btn a {
+    margin: 0;
+    padding: 0;
+    background: #fb7333;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 38px;
+    display: block;
+    width: 100%;
+    height: 38px;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.ListView-Btn a:hover,
+.ListView-Btn a:focus,
+.ListView-Btn a:active {
+    background: #3f2355;
+    color: #fff;
+}
+.admin-account-detail-container {
+    width: 944px;
+}
+.Admin-HeadLeft {
+    margin: 0 0 30px 0;
+    padding: 0;
+    float: left;
+}
+.Admin-HeadLeft h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    color: #3f2355;
+    text-align: left;
+    text-decoration: none;
+}
+.Admin-HeadLeft h2 {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-family: "basis_grotesque_proregular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #828385;
+    text-align: left;
+    text-decoration: none;
+}
+.Admin-HeadRight {
+    margin: 5px 0 0 30px;
+    padding: 0;
+    float: left;
+}
+.Admin-HeadRight h3,
+.Admin-HeadRight h4,
+.Admin-HeadRight h5 {
+    margin: 0;
+    padding: 0;
+    width: 106px;
+    height: 32px;
+    background: #f2c94c;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: "BasisGrotesquePro-Medium";
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+}
+.Admin-HeadRight h4 {
+    background: #81db0f;
+}
+.Admin-HeadRight h5 {
+    background: #2f80ed;
+    width: 178px;
+}
+.Admin-DealerLeft,
+.Admin-DealerRight {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 457px;
+}
+.Admin-DealerSetting,
+.Admin-DealerRight {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 1049px;
+}
+.Admin-DealerRight {
+    margin-left: 30px;
+}
+.InnerDealer-Container {
+    margin: 0 0 30px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #eaeaeb;
+}
+.InnerDealer-Head {
+    margin: 0;
+    padding: 0 0 12px 0;
+    border-bottom: 1px solid #eaeaeb;
+    position: relative;
+}
+.Inner-Dealer-Head {
+    margin: 0;
+    padding: 10px 0 12px 0;
+    position: relative;
+}
+.textAlienEnd {
+    text-align: end;
+}
+.btnDesignSave {
+    width: 134px;
+    height: 41px;
+    background: #fff;
+    border: 1px solid #d0d5dd;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.settingMenagetext {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 124%;
+    color: #667085;
+}
+.InnerDealer-Head::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+.InnerDealer-Head .InnerLeft {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.InnerDealer-Head .InnerLeft h1,
+.InnerDealer-Head .InnerLeft h5,
+.InnerDealer-Head .InnerLeft h6 {
+    margin: 0;
+    padding: 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+    text-decoration: none;
+    color: #3f2355;
+}
+.InnerDealer-Head .InnerLeft h5 span {
+    color: #81db0f;
+    font-size: 12px;
+    margin-left: 15px;
+}
+.InnerDealer-Head .InnerLeft h1 span {
+    color: #828385;
+    margin-left: 6px;
+}
+.InnerDealer-Head .InnerLeft h6 span {
+    color: #2f80ed;
+    font-size: 12px;
+    margin-left: 15px;
+}
+.InnerDealer-Head .InnerRight {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.InnerDealer-Head .InnerRight h3 {
+    margin: 2px 0 0 20px;
+    padding: 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+    text-decoration: none;
+    color: #3f2355;
+    float: left;
+}
+.InnerDealer-Head .InnerRight h3 span {
+    color: #828385;
+}
+.InnerDealer-Head .InnerRight button {
+    margin: -5px 0 0 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 0;
+}
+.InnerDealer-Head .InnerRight button img {
+    margin: 0;
+    padding: 0;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+}
+.InnerDealer-Head .InnerRight button span {
+    margin: 0 16px 0 0px;
+    padding: 0;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "BasisGrotesquePro-Medium";
+    text-align: left;
+    text-decoration: none;
+    color: #2f80ed;
+    display: inline-block;
+}
+.DealerID-Container {
+    margin: 0;
+    padding: 16px 0 0 0;
+}
+.DealerID-Container button {
+    margin: 30px 0 0 0;
+    padding: 0;
+    background: #2f80ed;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 38px;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.DealerID-Container button:hover,
+.DealerID-Container button:active,
+.DealerID-Container button:focus {
+    background: #fb5100;
+}
+.DealerID-List {
+    margin: 0;
+    padding: 0;
+}
+.DealerID-List::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+.DealerID-List:nth-child(odd) {
+    background: #f5f7fa;
+}
+.DealerID-List:nth-child(even) {
+    background: #fff;
+}
+.VehicleInfo-Container {
+    margin: 0;
+    padding: 0;
+}
+.VehicleInfo-Container:nth-child(odd) {
+    background: #f5f7fa;
+}
+.VehicleInfo-Container:nth-child(even) {
+    background: #fff;
+}
+.DealerID-List .LeftCon,
+.DealerID-List .RightCon {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 50%;
+}
+.DealerID-List .LeftCon h1,
+.DealerID-List .RightCon h2,
+.DealerID-List .RightCon h3 {
+    margin: 0;
+    padding: 8px 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 12px;
+    color: #3f2355;
+    text-align: left;
+    text-decoration: none;
+    position: relative;
+}
+.DealerID-List .LeftCon h1::after {
+    content: ":";
+    font-family: "basis_grotesque_probold";
+    font-weight: 700;
+    font-size: 12px;
+    color: #3f2355;
+    margin-left: 0;
+    position: absolute;
+    top: 8px;
+    right: 40px;
+    z-index: 99;
+}
+.DealerID-List .LeftCon h1 {
+    padding-left: 16px;
+}
+.DealerID-List .RightCon h2 {
+    color: #aaabad;
+}
+.DealerID-List .RightCon h2 span {
+    color: #fb5100;
+}
+.DealerID-List .RightCon h3 {
+    color: #828385;
+}
+.Admin-MainHead {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 943px;
+}
+.Admin-MainHead::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.Admin-DealerAdres {
+    margin: 0;
+    padding: 20px 0 10px 0;
+}
+.Admin-DealerAdres .css-1uccc91-singleValue {
+    -webkit-transform: translateY(-45%);
+    -ms-transform: translateY(-45%);
+    transform: translateY(-45%);
+}
+.Admin-DealerAdres img {
+    margin: 0 2px 0 0px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.Admin-DealerAdres h3 {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "basis_grotesque_proregular";
+    color: #3f2355;
+}
+.Admin-DealerAdres p {
+    margin: 0;
+    padding: 0;
+    font-family: "basis_grotesque_proregular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+    color: #3f2355;
+    line-height: 16px;
+}
+.ListGallery {
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+.ListGallery::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+.ListGallery .upload-photo-inner {
+    display: table-cell;
+    overflow: hidden;
+    width: 25%;
+    float: left;
+    padding: 6px;
+}
+.ListGallery .dropzone {
+    min-height: auto;
+    background: white;
+    margin: 0 !important;
+    padding: 12px 0 0 0;
+    border: 1px dashed #3f2355;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 70px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+.ListGallery .dropzone img {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+}
+.ListGallery .dropzone p {
+    margin: 0;
+    padding: 5px 0 0 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-size: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #3f2355;
+}
+.ListGallery .imageObject {
+    overflow: hidden;
+    width: 25%;
+    float: left;
+    padding: 6px;
+    height: 80px;
+    position: relative;
+    border: 1px dashed transparent;
+}
+.ListGallery .imageObject > div {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    z-index: 99;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.dropzone.dz-started .dz-message {
+    display: block !important;
+}
+.ListGallery .dropzone .dz-message {
+    text-align: center;
+    margin: 0em 0;
+    border: 0.5px dashed #3f2355;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 83px;
+    height: 52px;
+    float: left;
+}
+.ListGallery .dropzone.dz-clickable .dz-message small {
+    margin: 0;
+    padding: 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #3f2355;
+}
+.ListGallery .dropzone .dz-preview {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 0 7px 7px;
+    min-height: 52px;
+}
+.ListGallery .dropzone .dz-preview .dz-image {
+    border-radius: 5px;
+    overflow: hidden;
+    width: 80px;
+    height: 52px;
+    position: relative;
+    display: block;
+    z-index: 10;
+}
+.ListGallery .dropzone .dz-preview .dz-image img {
+    display: block;
+    width: 83px;
+    height: 52px;
+}
+.dropzone.dz-clickable .dz-message img {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 5px;
+}
+.CustomMake-Form {
+    margin: 0;
+    padding: 20px 0 0 0;
+    width: 417px;
+}
+.CustomMake-Form::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+.CustomMake-Form label {
+    margin: 0;
+    padding: 0 0 5px 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    color: #3f2355;
+    display: block;
+}
+.CustomMake-Form input,
+.CustomMake-Form select {
+    margin: 0;
+    padding: 0 12px;
+    border: 1px solid #d4d0dd;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #fff;
+    outline: none;
+    font-family: "BasisGrotesquePro-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+    text-decoration: none;
+    color: #828385;
+    height: 40px;
+    width: 100%;
+}
+.CustomMake-Form select {
+    background: #fff url(../image/sprite-icon/arrow-down-select.svg) no-repeat right 15px center;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: radio-container;
+    appearance: none;
+}
+.CustomMake-Form input::-webkit-input-placeholder {
+    color: #828385;
+}
+.CustomMake-Form input:-moz-placeholder {
+    color: #828385;
+    opacity: 1;
+}
+.CustomMake-Form input::-moz-placeholder {
+    color: #828385;
+    opacity: 1;
+}
+.CustomMake-Form input:-ms-input-placeholder {
+    color: #828385;
+}
+.CustomMake-Form input::-ms-input-placeholder {
+    color: #828385;
+}
+.CustomMake-Form input::placeholder {
+    color: #828385;
+}
+.CustomMake-Form button {
+    margin: 30px 0 0 0;
+    padding: 0;
+    background: #2f80ed;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: "BasisGrotesquePro-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    height: 38px;
+    width: 100%;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.CustomMake-Form button:hover,
+.CustomMake-Form button:focus,
+.CustomMake-Form button:active {
+    background: #fb5100;
+}
+.CustomMake-Form .MakeLeft-Form,
+.CustomMake-Form .MakeRight-Form {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 200px;
+}
+.CustomMake-Form .MakeRight-Form {
+    float: right;
+}
+.Reasonfor-Diclined {
+    margin: 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    max-width: 943px;
+    width: 100%;
+    border: 1px solid #eaeaeb;
+}
+.Reasonfor-Diclined.dicline-add-mt {
+    margin-top: 30px;
+}
+.Reasonfor-Head {
+    margin: 0;
+    padding: 0;
+}
+.Reasonfor-Head h1 {
+    margin: 0;
+    padding: 0 0 12px 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+    text-decoration: none;
+    border-bottom: #eaeaeb 1px solid;
+    color: #3f2355;
+}
+.Reasonfor-Head p {
+    margin: 0;
+    padding: 20px 0 20px 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    text-decoration: none;
+    color: #3f2355;
+}
+.Reasonfor-Head textarea {
+    margin: 20px 0 0 0px;
+    padding: 0;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    font-family: "BasisGrotesquePro-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    text-decoration: none;
+    color: #3f2355;
+    width: 100%;
+    height: 80px;
+    resize: none;
+}
+.Reasonfor-Btn {
+    margin: 20px 0 50px 0;
+    padding: 0;
+}
+.Reasonfor-Btn button {
+    margin: 0 18px 0 0px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: #81db0f;
+    border-radius: 10px;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    width: 147px;
+    height: 38px;
+}
+.Reasonfor-Btn button.active {
+    background: #3f2355;
+}
+.Pending-ListHead {
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+.Pending-ListHead h1 {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-family: "basis_grotesque_probold";
+    font-weight: bold;
+    font-size: 28px;
+    color: #3f2355;
+    text-align: left;
+    text-decoration: none;
+    line-height: 35px;
+}
+.dealership.nav-tabs {
+    border: none;
+}
+.dealership.tab-content {
+    max-width: 1049px;
+}
+.dealership .nav-link {
+    background-color: #fff !important;
+    font-size: 14px !important;
+    font-weight: 500;
+    border: 1px solid #d1d5dc !important;
+    line-height: 18px;
+}
+.dealership .nav-link.active {
+    background-color: #f9fafb !important;
+}
+.dealership .nav-link:focus,
+.nav-link:hover {
+    color: #495057 !important;
+    background-color: #f9fafb !important;
+}
+.Admin-dealership .nav-link {
+    font-size: 12px !important;
+    padding: 13px 35px;
+    border: 1px solid #eee !important;
+    border-bottom: none !important;
+    margin-bottom: 0px !important;
+    font-weight: 700;
+    color: #a0aabc !important;
+}
+.Admin-dealership .nav-link:hover {
+    background: #fff !important;
+}
+.Admin-dealership .nav-link.active {
+    font-size: 12px !important;
+    color: #495057 !important;
+}
+.owner .nav-link {
+    background-color: #fff !important;
+    font-size: 14px !important;
+    font-weight: 500;
+    border: 1px solid #d1d5dc !important;
+    line-height: 18px;
+    color: #d1d5dc !important;
+}
+.owner .nav-link.complete {
+    background-color: #f9fafb !important;
+    color: #495057 !important;
+}
+.owner .nav-link.active {
+    color: #495057 !important;
+}
+.owner .nav-link:focus,
+.nav-link:hover {
+    color: #495057 !important;
+    background-color: transparent !important;
+}
+.Dealer-dtable {
+    margin: 30px 0 0 0;
+    padding: 0;
+    border: 1px solid #eaeaeb;
+    position: relative;
+}
+.wrapper form {
+    height: 167px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid #d1d5dc;
+    text-align: center;
+}
+form i {
+    font-size: 50px;
+    color: #ffad84;
+}
+form p {
+    margin-top: 15px;
+    font-size: 16px;
+}
+.Admin-ActiveList-Container,
+.Admin-AgentList-Container {
+    margin: 0 0 50px 0;
+    padding: 0;
+}
+.Admin-ActiveList-Container .nav-tabs {
+    border-bottom: 1px solid #eaeaeb;
+    background: #eaeaeb;
+    border: 1px solid #f5f7fa;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 220px;
+    height: 40px;
+}
+.Admin-ActiveList-Container .TableTab {
+    margin: 20px 0px;
+    padding: 0;
+}
+.Admin-ActiveList-Container .TableTab li {
+    width: 50%;
+    text-align: center;
+}
+.Admin-ActiveList-Container .TableTab li a {
+    margin: 0;
+    padding: 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #828385;
+    line-height: 40px;
+    display: block;
+    border-radius: 10px;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.Admin-ActiveList-Container .TableTab li a.active {
+    background: #3f2355;
+    color: #fff;
+}
+.AlContainer {
+    margin: 20px 0 20px 0;
+    padding: 0;
+}
+.AlContainer::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.AlContainer .ActiveList-Left,
+.AlContainer .ActiveList-Right {
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+}
+.AlContainer .ActiveList-Left,
+.AlContainer .ActiveList-Right {
+    display: none;
+}
+.AlContainer .ActiveList-Left input {
+    margin: 0;
+    padding: 0 10px 0 40px;
+    background: #fff url(../image/sprite-icon/icon-search.svg) no-repeat left 16px top 11px;
+    border: 1px solid #eeeef0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    font-family: "basis_grotesque_proregular";
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+    width: 343px;
+    height: 40px;
+    color: #aaabad;
+}
+.Admin-dtable.dt-holder tr input,
+.Admin-dtable.dt-holder tr select {
+    margin: 0;
+    padding: 0 15px;
+    background: #fbfbfb;
+    border: 1px solid #eeeef0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    font-family: "BasisGrotesquePro-Medium";
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+    height: 35px;
+    color: #aaabad;
+}
+.Admin-dtable.dt-holder tr select::-ms-expand {
+    display: none;
+}
+.Admin-dtable.dt-holder tr select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(/assets/image/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 15px;
+}
+.AlContainer .ActiveList-Left input::-webkit-input-placeholder {
+    color: #aaabad;
+}
+.AlContainer .ActiveList-Left input:-moz-placeholder {
+    color: #aaabad;
+    opacity: 1;
+}
+.AlContainer .ActiveList-Left input::-moz-placeholder {
+    color: #aaabad;
+    opacity: 1;
+}
+.AlContainer .ActiveList-Left input:-ms-input-placeholder {
+    color: #aaabad;
+}
+.AlContainer .ActiveList-Left input::-ms-input-placeholder {
+    color: #aaabad;
+}
+.AlContainer .ActiveList-Left input::placeholder {
+    color: #aaabad;
+}
+.AlContainer .ActiveList-Right {
+    float: right;
+    margin-top: 5px;
+}
+.AlContainer .ActiveList-Right a {
+    text-decoration: none;
+}
+.AlContainer .ActiveList-Right.agent-new-button {
+    top: 56px;
+}
+.AlContainer .ActiveList-Right button {
+    margin: 0;
+    padding: 0;
+    background: #fb5100;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 106px;
+    height: 32px;
+    font-family: "basis_grotesque_probold";
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+    display: block;
+}
+.Altable-Container {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border-radius: 5px;
+}
+.Admin-dtable {
+    margin: 80px 0 0 0;
+    padding: 0;
+    border: 1px solid #eaeaeb;
+    position: relative;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.Admin-dtable.dt-holder {
+    margin: 0;
+    border: none;
+}
+.Admin-dtable div.dataTables_scrollBody {
+    overflow: inherit !important;
+}
+.owner {
+    border: none !important;
+    background: none !important;
+    height: 0px !important;
+}
+.owner button {
+    font-size: 15px !important;
+    padding: 0.5rem;
+}
+.owner button.btnA {
+    transform: rotate(90deg);
+    position: absolute !important;
+    right: -60px;
+    top: 22px !important;
+}
+.owner button.btnB {
+    transform: rotate(90deg);
+    position: absolute !important;
+    right: -61px;
+    top: 105px !important;
+}
+.owner button.btnC {
+    transform: rotate(90deg);
+    position: absolute !important;
+    right: -60px;
+    top: 187px !important;
+}
+.owner button.btnD {
+    transform: rotate(90deg);
+    position: absolute !important;
+    right: -60px;
+    top: 268px !important;
+}
+.owner button.btnE {
+    transform: rotate(90deg);
+    position: absolute !important;
+    right: -60px;
+    top: 349px !important;
+}
+.owner button.btnF {
+    transform: rotate(90deg);
+    position: absolute !important;
+    right: -60px;
+    top: 430px !important;
+}
+.Dealerfoobtn .btn-primary {
+    border: 1px solid #eaeaeb !important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 6px;
+    text-align: center;
+    font-family: "basis_grotesque_proregular", sans-serif;
+    height: 48px;
+    background-color: transparent !important;
+    font-size: 16px;
+    padding: 0;
+    line-height: 48px;
+    color: #3f2355 !important;
+    min-width: 140px;
+}
+.Dealerfoobtn .btn-primary:hover {
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+    background-color: #eaeaeb !important;
+}
+.dealer-doc-content .upload-doc-box {
+    background: #fff;
+    border: 1px solid #eeeef0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 49px 20px 80px rgb(57 53 80/5%);
+    box-shadow: 49px 20px 80px rgb(57 53 80/5%);
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 16px 200px 16px 32px;
+    position: relative;
+    margin: 15px 0 0;
+}
+.dealer-doc-content .upload-doc-box .icon-holder {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #ffece4;
+    -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+    -ms-transform: matrix(1, 0, 0, -1, 0, 0);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    float: left;
+    background-image: url(../image/buyer-file-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 4px 0 0;
+}
+.dealer-doc-content .upload-doc-box .text-box {
+    overflow: hidden;
+    padding: 0 0 0 21px;
+}
+.dealer-doc-content .upload-doc-box .upload-btn .text {
+    display: inline-block;
+    background-image: url(../image/upload-icon1.svg);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding: 0 0 0 24px;
+}
+.dealer-doc-content .upload-doc-box .upload-btn:hover .text {
+    background-image: url(../image/upload-icon2.svg);
+}
+.dealer-doc-content .upload-doc-box .upload-btn {
+    position: absolute;
+    right: 54px;
+    line-height: 48px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 6px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 1px solid #eaeaeb;
+    background-color: transparent;
+    font-size: 16px;
+    text-align: center;
+    color: #3f2355;
+    font-family: "basis_grotesque_probold", sans-serif;
+    text-decoration: none;
+    padding: 0 30px;
+    cursor: pointer;
+}
+.dealer-doc-content .upload-doc-box .upload-btn:hover {
+    background-color: #fb5100;
+    border-color: transparent;
+    color: #fff;
+}
+.dealer-doc-content .custom-file-input {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+.dealer-doc-content {
+    margin: 15px 0 0;
+}
+.dealer-data-content {
+    background: #fff;
+    border: 1px solid #eeeef0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 49px 20px 80px rgb(57 53 80/5%);
+    box-shadow: 49px 20px 80px rgb(57 53 80/5%);
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 15px 15px 15px 15px;
+    position: relative;
+    margin: 15px 0 45px;
+}
+.Dealer-table thead {
+    border: none !important;
+    border-bottom: 1px solid #f4f4f4 !important;
+}
+.Dealer-table tr th {
+    font-size: 16px !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    height: 54px !important;
+    font-family: "basis_grotesque_proregular" !important;
+    padding: 13px 0px !important;
+    text-transform: uppercase !important;
+    position: relative !important;
+}
+.Actionbtn {
+    margin: 0px !important;
+    padding: 0 1px !important;
+    background: #00ca5e !important;
+    border-radius: 65px !important;
+    border: none !important;
+    outline: none !important;
+    font-family: "BasisGrotesquePro-Medium" !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    max-width: 130px !important;
+    width: 100% !important;
+    height: 28px !important;
+    color: #fff !important;
+    line-height: 30px !important;
+    display: block !important;
+    cursor: pointer !important;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.vehical .label {
+    font-weight: 600;
+}
+.vehical .switch-holder input {
+    position: absolute;
+    opacity: 0;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+.vehical .switch-holder label {
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+.vehical .switch-holder input:checked + label {
+    background-color: #fb7333;
+}
+.vehical .switch-holder input:checked + label div {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+.vehical .switch {
+    display: inline-block;
+    font-size: 20px;
+    height: 26px;
+    width: 46px;
+    background: #bdb9a6;
+    border-radius: 26px;
+    margin: 0;
+    cursor: pointer;
+}
+.vehical .switch div {
+    height: 20px;
+    width: 20px;
+    margin: 3px 0 0 3px;
+    border-radius: 50%;
+    background: #fff;
+    -webkit-box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+.location .label {
+    font-weight: 600;
+}
+.location .switch-holder input {
+    position: absolute;
+    opacity: 0;
+}
+.location .switch-holder label {
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+.location .switch-holder input:checked + label {
+    background-color: #fb7333;
+}
+.location .switch-holder input:checked + label div {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+.location .switch {
+    display: inline-block;
+    font-size: 20px;
+    height: 26px;
+    width: 46px;
+    background: #bdb9a6;
+    border-radius: 26px;
+    margin: 0;
+    cursor: pointer;
+}
+.location .switch div {
+    height: 20px;
+    width: 20px;
+    margin: 3px 0 0 3px;
+    border-radius: 50%;
+    background: #fff;
+    -webkit-box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+.Admin-dtable thead {
+    border-top: 1px solid #f4f4f4;
+}
+.Admin-dtable.dt-holder tr th,
+.Admin-dtable.dt-holder tr td {
+    padding: 0 15px;
+}
+.Admin-dtable tr th {
+    font-size: 14px;
+    color: #828385;
+    font-weight: normal;
+    height: 54px;
+    font-family: "basis_grotesque_proregular";
+    padding: 13px 6px;
+    text-transform: uppercase;
+    position: relative;
+}
+.Admin-dtable tr th span {
+    font-size: 14px;
+    color: #3f2355;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+}
+.Admin-dtable tr th:nth-child(8) {
+    width: 130px !important;
+}
+.Admin-dtable tr td {
+    font-size: 14px;
+    color: #828385;
+    font-weight: normal;
+    font-family: "basis_grotesque_proregular";
+    height: 54px;
+}
+.Admin-dtable.dms-dt tr td,
+.Admin-dtable.dms-dt tr th {
+    padding: 0 15px;
+}
+.Admin-dtable tr td span {
+    color: #3f2355;
+}
+.Admin-dtable tr:nth-child(even) {
+    background: #f5f7fa;
+}
+.Admin-dtable a {
+    margin: 0;
+    padding: 0 1px;
+    background: #fbe8e0;
+    border-radius: 65px;
+    border: none;
+    outline: none;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    max-width: 77px;
+    width: 100%;
+    height: 28px;
+    color: #fb5100;
+    line-height: 28px;
+    display: block;
+    cursor: pointer;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.Admin-dtable a:hover,
+.Admin-dtable a:focus,
+.Admin-dtable a:active {
+    background: #3f2355;
+    color: #fff;
+}
+.Admin-dtable tr td span a {
+    font-family: "basis_grotesque_proregular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #3f2355;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    text-align: left;
+    display: inherit;
+}
+.Admin-dtable tr td span a:hover,
+.Admin-dtable tr td span a:focus,
+.Admin-dtable tr td span a:active {
+    background: none;
+    color: #3f2355;
+}
+.Admin-dtable .imgprint {
+    margin: 0 0px 0 0px;
+    padding: 0 30px 0 0px;
+    position: relative;
+    top: 1px;
+    text-align: right;
+    float: right;
+    width: 150px;
+}
+.Admin-dtable .imgprint.imageapp-width {
+    width: 110px;
+}
+.Admin-dtable .imgprint button {
+    margin: 0 20px 0 0px;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+}
+.Admin-dtable .imgprint button a {
+    background: none;
+}
+.Admin-dtable .imgprint button a:hover,
+.Admin-dtable .imgprint button a:focus,
+.Admin-dtable .imgprint button a:active {
+    background: none;
+}
+.Account-EditBtn {
+    margin: 0;
+    padding: 0;
+}
+.Account-EditBtn::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+.Account-EditBtn button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    float: right;
+}
+.Account-EditBtn button img {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    float: right;
+}
+.Account-EditBtn button:hover,
+.Account-EditBtn button:focus,
+.Account-EditBtn button:active {
+    background: none;
+}
+.Account-EditBtn .newbtn-add {
+    margin: 20px 0 10px 0px;
+    padding: 0 1px;
+    background: #2f80ed;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    max-width: 100%;
+    width: 100%;
+    height: 38px;
+    color: #fff;
+    line-height: 28px;
+    display: block;
+    cursor: pointer;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.Account-EditBtn .newbtn-add:hover,
+.Account-EditBtn .newbtn-add:focus,
+.Account-EditBtn .newbtn-add:active {
+    background: #3f2355;
+    color: #fff;
+}
+.InnerMark-Container {
+    margin: 16px 0 0 0;
+    padding: 0;
+}
+.Admin-DocumetCheck {
+    margin: 0px 0 0 0;
+    padding: 0;
+}
+.Admin-DocumetCheck:nth-child(odd) {
+    background: #f5f7fa;
+    height: 30px;
+    padding-left: 16px;
+}
+.Admin-DocumetCheck:nth-child(even) {
+    background: #fff;
+    height: 30px;
+    padding-left: 16px;
+}
+.Admin-DocumetCheck .DocBtn-Container.active {
+    color: lightgrey;
+}
+.Admin-DocumetCheck .DocBtn-Container {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: "BasisGrotesquePro-Medium";
+    color: #3f2355;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.Admin-DocumetCheck .DocBtn-Container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.Admin-DocumetCheck .DocMark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border: 1px solid #aaabad;
+    box-sizing: border-box;
+    border-radius: 16px;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.Admin-DocumetCheck .DocBtn-Container:hover input ~ .DocMark {
+    background-color: #fff;
+    border: 1px solid #aaabad;
+}
+.Admin-DocumetCheck .DocBtn-Container input:checked ~ .DocMark {
+    background: #3f2355;
+    border: 1px solid #3f2355;
+}
+.Admin-DocumetCheck .DocMark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.Admin-DocumetCheck .DocBtn-Container input:checked ~ .DocMark:after {
+    display: block;
+}
+.Admin-DocumetCheck .DocBtn-Container .DocMark:after {
+    left: 4px;
+    top: 2px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.InnerMark-Container button {
+    margin: 30px 0 0 0;
+    padding: 0;
+    background: #2f80ed;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    height: 38px;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.InnerMark-Container button:hover,
+.InnerMark-Container button:focus,
+.InnerMark-Container button:active {
+    background: #fb5100;
+}
+.PrinOwner-Container {
+    margin: 0;
+    padding: 0px;
+    background: #fff;
+    border-radius: 10px;
+    width: 100% !important;
+}
+.PrimeOwner-Head {
+    margin: 0 20px 0 20px;
+    padding: 20px 0px 12px 0;
+    border-bottom: 1px solid #eaeaeb;
+    position: relative;
+}
+.PrimeOwner-Head::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+.PrimeOwner-Head .OwnerLeft,
+.PrimeOwner-Head .OwnerRight {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.PrimeOwner-Head .OwnerLeft h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+    text-decoration: none;
+    color: #3f2355;
+}
+.PrimeOwner-Head .OwnerLeft h1 {
+    line-height: 38px;
+}
+.PrimeOwner-Head .OwnerLeft .btn-primary {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: #fb5100;
+}
+.PrimeOwner-Head .OwnerLeft .edit-btn {
+    font-family: "BasisGrotesquePro-Medium";
+    font-size: 14px;
+    background-color: #fb5100 !important;
+    color: #fff;
+}
+.PrimeOwner-Head .OwnerLeft .btn-primary:disabled {
+    cursor: no-drop;
+    opacity: 0.5;
+}
+.PrimeOwner-Head .OwnerRight {
+    float: right;
+}
+.PrimeOwner-Head .OwnerRight button {
+    margin: -5px 0 0 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 0;
+}
+.PrimeOwner-Head .OwnerRight img {
+    margin: 0;
+    padding: 0;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+}
+.PrimeOwner-Table {
+    margin: 0 0 30px 0;
+    padding: 0 0 20px 0;
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+}
+.PrimeOwner-Table tr th {
+    font-family: "basis_grotesque_proregular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+    color: #3f2355;
+    padding: 16px 20px 25px;
+}
+.PrimeOwner-Table tr td {
+    font-family: "basis_grotesque_proregular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+    color: #5b5b5c;
+    padding: 7px 0px 7px 20px;
+}
+.PrimeOwner-Table tr:nth-child(even) {
+    background: #f5f7fa;
+}
+.PrimeOwner-Table tr td span {
+    color: #3f2355;
+}
+.Admin-ConditionApproved {
+    margin: 0;
+    padding: 0;
+}
+.Admin-ConditionApproved,
+.Admin-ConditionApproved h1 {
+    margin: 0;
+    padding: 0;
+    background: #d1e2fb;
+    border-radius: 65px;
+    border: none;
+    outline: none;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    text-decoration: none;
+    color: #2f80ed;
+    width: 142px;
+    height: 28px;
+    line-height: 28px;
+}
+.table-unverified {
+    margin: 0;
+    padding: 0;
+    background: #ffedbe;
+    border-radius: 65px;
+    border: none;
+    outline: none;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    text-decoration: none;
+    color: #e5a502;
+    width: 142px;
+    height: 28px;
+    line-height: 28px;
+}
+.table-declined {
+    margin: 0;
+    padding: 0;
+    background: #ffc9c9;
+    border-radius: 65px;
+    border: none;
+    outline: none;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    text-decoration: none;
+    color: red;
+    width: 142px;
+    height: 28px;
+    line-height: 28px;
+}
+.table-withdraw {
+    margin: 0;
+    padding: 0;
+    background: #d1ffe6;
+    border-radius: 65px;
+    border: none;
+    outline: none;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    text-decoration: none;
+    color: #04bcb1;
+    width: 142px;
+    height: 28px;
+    line-height: 28px;
+}
+.approved-sec {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 65px;
+    border: none;
+    outline: none;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    width: 142px;
+    height: 28px;
+    line-height: 28px;
+}
+.table-funded {
+    margin: 0;
+    padding: 0;
+    background: #33363f;
+    border-radius: 65px;
+    border: none;
+    outline: none;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    width: 142px;
+    height: 28px;
+    line-height: 28px;
+}
+.Admin-ConditionApproved h1.active,
+.Admin-ConditionApproved.active {
+    color: #fff;
+    background: #0ac660;
+}
+.admin-delete-selected-button {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    z-index: 99;
+}
+.admin-delete-selected-button button,
+.admin-delete-selected-button a {
+    margin: 0;
+    background: #fb5100;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 132px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "basis_grotesque_probold";
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+}
+.admin-delete-selected-button.btn-top-next {
+    top: 127px;
+}
+.admin-icon-delete {
+    margin: -30px 25px 0 76px;
+    position: relative;
+    right: 0;
+    z-index: 99;
+}
+.admin-icon-delete button,
+.admin-icon-delete a {
+    margin: 0;
+    background: none;
+    border: none;
+    outline: none;
+}
+.icon-delete button,
+.icon-delete a {
+    border: none;
+    outline: none;
+}
+.Admin-AgentForm {
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+.Admin-AgentForm label {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    color: #3f2355;
+    display: block;
+    line-height: 22.4px;
+}
+.Admin-AgentForm select {
+    margin: 0;
+    padding: 0 0 0 11px;
+    background: #fff url(../image/sprite-icon/arrow-down-select.svg) no-repeat right 15px center;
+    border: 1px solid #d4d0dd;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    font-family: "BasisGrotesquePro-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+    text-decoration: none;
+    color: #828385;
+    height: 40px;
+    width: 100%;
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: radio-container;
+    appearance: none;
+}
+.Admin-AgentForm button {
+    margin: 20px 0 0 0;
+    padding: 0;
+    background: #2f80ed;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 38px;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.Admin-AgentForm button:hover,
+.Admin-AgentForm button:focus,
+.Admin-AgentForm button:active {
+    background: #fb5100;
+}
+.AdminThird-PartyForm {
+    margin: 0 0 16px 0;
+    padding: 0;
+    position: relative;
+}
+.AdminThird-PartyForm label {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    color: #3f2355;
+    display: block;
+    line-height: 22.4px;
+}
+.AdminThird-PartyForm input,
+.AdminThird-PartyForm select {
+    margin: 0;
+    padding: 0 0 0 11px;
+    background: #fff;
+    border: 1px solid #d4d0dd;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    font-family: "BasisGrotesquePro-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+    text-decoration: none;
+    color: #828385;
+    height: 40px;
+    width: 100%;
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: radio-container;
+    appearance: none;
+}
+.AdminThird-PartyForm select {
+    background: #fff url(../image/sprite-icon/arrow-down-select.svg) no-repeat right 15px center;
+}
+.AdminThird-PartyForm input::-webkit-input-placeholder {
+    color: #828385;
+}
+.AdminThird-PartyForm input:-moz-placeholder {
+    color: #828385;
+    opacity: 1;
+}
+.AdminThird-PartyForm input::-moz-placeholder {
+    color: #828385;
+    opacity: 1;
+}
+.AdminThird-PartyForm input:-ms-input-placeholder {
+    color: #828385;
+}
+.AdminThird-PartyForm input::-ms-input-placeholder {
+    color: #828385;
+}
+.AdminThird-PartyForm input::placeholder {
+    color: #828385;
+}
+.Admin-custom-file-input {
+    height: 50px !important;
+    color: #3f2355 !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    font-family: "BasisGrotesquePro-Medium";
+    text-transform: capitalize !important;
+    padding-left: 79px !important;
+    padding-top: 11px !important;
+}
+.Admin-custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.Admin-custom-file-input::before {
+    content: "Choose File";
+    position: absolute;
+    left: 11px;
+    top: 40px;
+    z-index: 99;
+    border: 1px solid #f5f7fa;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: none;
+    font-weight: 500;
+    font-size: 14px;
+    background: #f5f7fa;
+    border-radius: 5px;
+    color: #3f2355;
+    font-family: "BasisGrotesquePro-Medium";
+    width: 150px;
+    height: 34px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 0;
+    margin-right: 0;
+}
+.Admin-custom-file-input:active {
+    outline: 0;
+}
+.AgentsBtn {
+    width: 187px !important;
+}
+.CreditReport-Container {
+    margin: 0;
+    padding: 30px;
+    width: 1050px;
+    height: 92px;
+    background: #fff;
+    border-radius: 10px;
+}
+.Admin-CreditReport {
+    margin: 0;
+    padding: 0;
+}
+.Admin-CreditReport::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.Admin-CreditReport .CreditLeft,
+.Admin-CreditReport .CreditRight {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.Admin-CreditReport .CreditLeft h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    color: #3f2355;
+    text-align: left;
+    text-decoration: none;
+    line-height: 32.24px;
+}
+.Admin-CreditReport .CreditRight {
+    float: right;
+    margin-top: 4px;
+}
+.Admin-CreditReport .CreditRight button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 0;
+}
+.Admin-CreditReport .CreditRight img {
+    margin: 0 0 0 20px;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    float: right;
+}
+.Admin-CreditReport .CreditRight h2 {
+    margin: 0;
+    padding: 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: #fb5100;
+    text-align: left;
+    float: left;
+    text-decoration: none;
+}
+.Admin-CreditReport .CreditRight h2 span {
+    font-family: "basis_grotesque_probold";
+    font-weight: 700;
+}
+.Admin-PersonalInfo-Container {
+    margin: 60px 0 0 0;
+    padding: 20px;
+    width: 1050px;
+    background: #fff;
+    border-radius: 10px;
+}
+.Admin-PersonalInfo-Container.co-applicant-detail-container {
+    max-width: 980px;
+    margin: 0px 0 0 0;
+    padding: 0px;
+    width: 100%;
+}
+.Admin-InfoInner,
+.Admin-InfoInner2 {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+.credit-report-print {
+    position: relative;
+}
+.credit-report-print .btn-primary {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 16px;
+    line-height: 40px;
+    font-family: "basis_grotesque_probold", sans-serif;
+    background-color: transparent;
+    border: none;
+    padding: 0 16px;
+    border-radius: 10px;
+    color: #fff;
+    background-image: url("../image/sprite-icon/icon-print.svg");
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.Admin-InfoInner .credit-report-print h1 {
+    line-height: 40px;
+}
+.Admin-InfoInner h1,
+.Admin-InfoInner2 h1 {
+    margin: 0;
+    padding: 0 0 12px 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    color: #3f2355;
+    border-bottom: #eaeaeb 1px solid;
+}
+.Admin-InfoInner ul,
+.Admin-InfoInner2 ul {
+    margin: 16px 0 0 0;
+    padding: 12px 20px 12px 20px;
+    background: #f5f7fa;
+    min-height: 60px;
+    width: 100%;
+    overflow: hidden;
+}
+.Admin-InfoInner2 ul img {
+    max-width: 100%;
+}
+.Admin-InfoInner::after .Admin-InfoInner2::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+.Admin-InfoInner ul li,
+.Admin-InfoInner2 ul li {
+    margin: 0 60px 0 0px;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+.Admin-InfoInner2 ul li {
+    margin: 0 32px 0 0;
+}
+.Admin-InfoInner ul li .Admin-PrName,
+.Admin-InfoInner2 ul li .Admin-PrName {
+    margin: 0;
+    padding: 0;
+}
+.Admin-InfoInner ul li .Admin-PrName h2,
+.Admin-InfoInner ul li .Admin-PrName h3,
+.Admin-InfoInner2 ul li .Admin-PrName h2,
+.Admin-InfoInner2 ul li .Admin-PrName h3 {
+    margin: 0;
+    padding: 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: left;
+    text-decoration: none;
+    color: #3f2355;
+}
+.Admin-InfoInner ul li .Admin-PrName h3,
+.Admin-InfoInner2 ul li .Admin-PrName h3 {
+    color: #828385;
+    margin-top: 12px;
+}
+.TradeAcc-Container {
+    margin: 30px 0 0 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 1050px;
+}
+.TradeAcc-Head {
+    margin: 0;
+    padding: 0;
+}
+.TradeAcc-Head h1 {
+    margin: 0;
+    padding: 0 0 12px 0;
+    font-family: "BasisGrotesquePro-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    color: #3f2355;
+    border-bottom: 1px solid #fb5100;
+}
+.Revolving-Head {
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+.Revolving-Head h1,
+.Revolving-Head h5 {
+    margin: 0;
+    padding: 0 20px 0 20px;
+    background: #f1f3f5;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3f2355;
+    height: 31px;
+    line-height: 34px;
+}
+.Revolving-Head h5 {
+    height: 4px;
+    background: #d4d0dd;
+    margin: 0 20px;
+}
+.Revolving-Head h2 {
+    margin: 0;
+    padding: 20px 0 6px 20px;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3f2355;
+}
+.Revolving-Head h3 {
+    margin: 0;
+    padding: 0 20px 20px;
+    font-family: "basis_grotesque_proregular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+    text-decoration: none;
+    color: #828385;
+}
+.Revolving-Head h4 {
+    margin: 0;
+    padding: 20px 20px 20px;
+    font-family: "BasisGrotesquePro-Medium";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+    color: #707683;
+}
+.Admin-OverViewList {
+    margin: 0;
+    padding: 0 20px 17px;
+}
+.Admin-OverViewList::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.Admin-OverViewList h1 {
+    margin: 0;
+    padding: 0 0 12px 0;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+    color: #3f2355;
+    border-bottom: 1px solid #e6e6e6;
+}
+.Admin-OverViewList ul {
+    margin: 16px 0 0 0;
+    padding: 0;
+}
+.Admin-OverViewList ul li {
+    margin: 0 0 8px 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    width: 50%;
+}
+.Admin-OverViewList ul li h3,
+.Admin-OverViewList ul li h4 {
+    margin: 0;
+    padding: 0;
+    font-family: "basis_grotesque_proregular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+    color: #5b5b5c;
+}
+.Admin-OverViewList ul li h4 {
+    color: #3f2355;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    text-align: right;
+}
+.Admin-PaymetList {
+    margin: 0;
+    padding: 0 20px 17px;
+}
+.Admin-PaymetList::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.Admin-PaymetList h1 {
+    margin: 0;
+    padding: 0 0 12px 0;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+    color: #3f2355;
+    border-bottom: 1px solid #e6e6e6;
+}
+.Admin-PaymetList ul {
+    margin: 0;
+    padding: 16px 0 0 0;
+}
+.Admin-PaymetList ul li {
+    margin: 0 0 10px 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    width: 184px;
+}
+.Admin-PaymetList ul li h2,
+.Admin-PaymetList ul li h3 {
+    margin: 0;
+    padding: 0;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+    color: #3f2355;
+}
+.Admin-PaymetList ul li h3 {
+    color: #fb5100;
+}
+.Admin-PaymentMt {
+    margin-top: 79px;
+}
+.Admin-CreditList {
+    margin: 0;
+    padding: 0;
+}
+.Admin-CreditList::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+.Admin-CreditList h1 {
+    margin: 20px 0 0 0;
+    padding: 0 20px 0 20px;
+    background: #f1f3f5;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3f2355;
+    height: 31px;
+    line-height: 34px;
+}
+.Admin-CreditList ul {
+    margin: 0;
+    padding: 0px 20px;
+}
+.Admin-CreditList ul li {
+    margin: 0;
+    padding: 20px 0 0 0;
+    list-style: none;
+    border-bottom: 1px solid #e6e6e6;
+}
+.Admin-CreditList ul li .Inquirt-CreditHead {
+    margin: 0;
+    padding: 0;
+}
+.Admin-CreditList ul li .Inquirt-CreditHead h2 {
+    margin: 0;
+    padding: 0 0 6px 0;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #3f2355;
+    text-align: left;
+    text-decoration: none;
+}
+.Admin-CreditList ul li .Inquirt-CreditHead h3 {
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-family: "basis_grotesque_proregular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828385;
+    text-align: left;
+    text-decoration: none;
+}
+.Admin-BankrupList {
+    margin: 0;
+    padding: 0;
+}
+.Admin-BankrupList::after,
+.Admin-BankrupList ul::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+.Admin-BankrupList h1 {
+    margin: 20px 0 0 0;
+    padding: 0 20px 0 20px;
+    background: #f1f3f5;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3f2355;
+    height: 31px;
+    line-height: 34px;
+}
+.Admin-BankrupList ul {
+    margin: 20px 20px 0 20px;
+    padding: 0;
+}
+.Admin-BankrupList ul li {
+    margin: 0 0 8px 0;
+    padding: 0;
+    list-style: none;
+    width: 50%;
+    float: left;
+}
+.Admin-BankrupList ul li h2,
+.Admin-BankrupList ul li h3 {
+    margin: 0;
+    padding: 0;
+    font-family: "basis_grotesque_proregular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+    color: #5b5b5c;
+}
+.Admin-BankrupList ul li h3 {
+    color: #3f2355;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    text-align: right;
+}
+.Admin-BankBorder {
+    border-bottom: 1px solid #ebeff2;
+    padding-bottom: 7px !important;
+}
+.Admin-LastBt {
+    margin-bottom: 50px;
+}
+.VehicleTable-Container {
+    margin: 0;
+    padding: 0;
+}
+.VehicleTable-Container .table {
+    width: 100%;
+    margin-bottom: 0rem;
+    color: transparent;
+    margin-top: 16px;
+}
+.VehicleTable-Container tr {
+    background: #f5f7fa;
+    width: 50%;
+    float: left;
+    padding: 0 0px 0 15px;
+    position: relative;
+}
+.selectdropdown {
+    padding: 2px !important;
+    white-space: nowrap;
+}
+.selectdropdown button {
+    width: 100% !important;
+    background: #f5f6f8;
+    border-radius: 5px;
+    padding: 7px 13px;
+    box-shadow: none;
+}
+.selectdropdown .banner-react-select__control {
+    width: 100% !important;
+    background: #f5f6f8;
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 14px;
+    background-image: url(../image/adpost-search.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: 90% 50% !important;
+    background-size: 17px;
+}
+.selectdropdown .banner-react-select__indicators .banner-react-select__indicator {
+    display: none;
+}
+.selectdropdown button:focus {
+    background: #644e77;
+    color: #fff;
+}
+.selectdropdown button.css-48ayfv {
+    background: #644e77;
+    color: #fff;
+}
+.VehicleTable-Container tr:nth-child(3),
+.VehicleTable-Container tr:nth-child(4),
+.VehicleTable-Container tr:nth-child(7),
+.VehicleTable-Container tr:nth-child(8),
+.VehicleTable-Container tr:nth-child(11),
+.VehicleTable-Container tr:nth-child(12),
+.VehicleTable-Container tr:nth-child(15),
+.VehicleTable-Container tr:nth-child(16),
+.VehicleTable-Container tr:nth-child(19),
+.VehicleTable-Container tr:nth-child(20),
+.VehicleTable-Container tr:nth-child(23),
+.VehicleTable-Container tr:nth-child(24),
+.VehicleTable-Container tr:nth-child(27),
+.VehicleTable-Container tr:nth-child(28),
+.VehicleTable-Container tr:nth-child(31),
+.VehicleTable-Container tr:nth-child(32),
+.VehicleTable-Container tr:nth-child(35),
+.VehicleTable-Container tr:nth-child(36),
+.VehicleTable-Container tr:nth-child(39),
+.VehicleTable-Container tr:nth-child(40),
+.VehicleTable-Container tr:nth-child(43),
+.VehicleTable-Container tr:nth-child(44),
+.VehicleTable-Container tr:nth-child(47),
+.VehicleTable-Container tr:nth-child(48),
+.VehicleTable-Container tr:nth-child(51),
+.VehicleTable-Container tr:nth-child(52),
+.VehicleTable-Container tr:nth-child(55),
+.VehicleTable-Container tr:nth-child(56),
+.VehicleTable-Container tr:nth-child(59),
+.VehicleTable-Container tr:nth-child(60),
+.VehicleTable-Container tr:nth-child(63),
+.VehicleTable-Container tr:nth-child(64),
+.VehicleTable-Container tr:nth-child(67),
+.VehicleTable-Container tr:nth-child(68),
+.VehicleTable-Container tr:nth-child(71),
+.VehicleTable-Container tr:nth-child(72),
+.VehicleTable-Container tr:nth-child(75),
+.VehicleTable-Container tr:nth-child(76),
+.VehicleTable-Container tr:nth-child(79),
+.VehicleTable-Container tr:nth-child(80),
+.VehicleTable-Container tr:nth-child(83),
+.VehicleTable-Container tr:nth-child(84),
+.VehicleTable-Container tr:nth-child(87),
+.VehicleTable-Container tr:nth-child(88),
+.VehicleTable-Container tr:nth-child(91),
+.VehicleTable-Container tr:nth-child(92),
+.VehicleTable-Container tr:nth-child(95),
+.VehicleTable-Container tr:nth-child(96),
+.VehicleTable-Container tr:nth-child(99),
+.VehicleTable-Container tr:nth-child(100) {
+    background: #fff;
+}
+.VehicleTable-Container tr td {
+    width: 50%;
+    padding: 8px 0px;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 14px;
+    color: #3f2355;
+    text-align: left;
+    text-decoration: none;
+    border-top: none;
+    vertical-align: middle;
+}
+.VehicleTable-Container tr td b {
+    position: absolute;
+    right: 30px;
+}
+.VehicleTable-Container tr td span {
+    color: #3f2355;
+}
+.VehicleTable-Container .Admin-DocumetCheck:nth-child(odd) {
+    background: #fff;
+    vertical-align: middle;
+    display: contents;
+}
+div.dataTables_wrapper div.dataTables_info {
+    float: left;
+    font-size: 14px;
+    color: #828385;
+    font-weight: normal;
+    font-family: "basis_grotesque_proregular";
+    margin-top: 12px;
+}
+div.dataTables_wrapper div.dataTables_paginate {
+    margin: 25px 0 20px 0px !important;
+    float: right;
+}
+div.dataTables_wrapper div.dataTables_paginate::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+div.dataTables_wrapper div.dataTables_paginate a {
+    margin: 0 0 0 10px;
+    padding: 6px 13px;
+    background: #fbe8e0;
+    border-radius: 65px;
+    border: none;
+    outline: none;
+    font-family: "BasisGrotesquePro-Medium";
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    max-width: 100%;
+    width: 100%;
+    height: 28px;
+    color: #fb5100;
+    line-height: 28px;
+    cursor: pointer;
+    display: inline;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+div.dataTables_wrapper div.dataTables_paginate a.current {
+    background: #3f2355;
+    color: #fff;
+}
+.dataTables_length,
+div.dataTables_wrapper div.dataTables_filter {
+    float: left;
+    padding: 18px 15px 7px;
+}
+div.dataTables_wrapper div.dataTables_filter {
+    float: right;
+    position: absolute;
+    top: -79px;
+    left: -18px;
+}
+.dataTables_length label,
+div.dataTables_wrapper div.dataTables_filter label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: "basis_grotesque_proregular";
+    color: #828385;
+}
+.dataTables_length label select,
+div.dataTables_wrapper div.dataTables_filter label input {
+    margin: 0 4px;
+    padding: 0 5px;
+    background: #fff;
+    border: 1px solid #eeeef0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    font-family: "basis_grotesque_proregular";
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+    width: 70px !important;
+    height: 40px;
+    color: #aaabad;
+}
+div.dataTables_wrapper div.dataTables_filter label input {
+    width: 250px !important;
+    padding: 0 0px 0 10px;
+}
+table.dataTable > thead .sorting:before,
+table.dataTable > thead .sorting:after,
+table.dataTable > thead .sorting_asc:before,
+table.dataTable > thead .sorting_asc:after,
+table.dataTable > thead .sorting_desc:before,
+table.dataTable > thead .sorting_desc:after,
+table.dataTable > thead .sorting_asc_disabled:before,
+table.dataTable > thead .sorting_asc_disabled:after,
+table.dataTable > thead .sorting_desc_disabled:before,
+table.dataTable > thead .sorting_desc_disabled:after {
+    position: absolute;
+    bottom: 0.9em;
+    display: block;
+    opacity: 1 !important;
+}
+table.dataTable > thead .sorting:before,
+table.dataTable > thead .sorting_asc:before,
+table.dataTable > thead .sorting_desc:before,
+table.dataTable > thead .sorting_asc_disabled:before,
+table.dataTable > thead .sorting_desc_disabled:before {
+    right: 1em;
+    content: "" !important;
+    opacity: 0 !important;
+}
+table.dataTable > thead .sorting:after,
+table.dataTable > thead .sorting_asc:after,
+table.dataTable > thead .sorting_desc:after,
+table.dataTable > thead .sorting_asc_disabled:after,
+table.dataTable > thead .sorting_desc_disabled:after {
+    content: "" !important;
+    background: url(../image/sprite-icon/table-arrow-down.svg) no-repeat right center;
+    height: 9px;
+    width: 9px;
+    right: 20px !important;
+    top: 24px;
+}
+table.dataTable > thead .sorting:first-child:after,
+table.dataTable > thead .sorting_asc:first-child:after,
+table.dataTable > thead .sorting_desc:first-child:after,
+table.dataTable > thead .sorting_asc_disabled:first-child:after,
+table.dataTable > thead .sorting_desc_disabled:first-child:after {
+    display: none !important;
+}
+.datatable-custom-pagination {
+    text-align: right;
+    padding: 15px 30px;
+}
+.datatable-custom-pagination button {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    padding: 0 0;
+    background: #fbe8e0;
+    border-radius: 65px;
+    border: none;
+    outline: none;
+    font-family: "BasisGrotesquePro-Medium";
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    width: 28px;
+    height: 28px;
+    color: #fb5100;
+    line-height: 28px;
+    cursor: pointer;
+    display: inline;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.custom-sorting {
+    content: "";
+    position: absolute;
+    height: 9px;
+    width: 9px;
+    right: 20px;
+    top: 24px;
+    cursor: pointer;
+    display: block;
+}
+.custom-sorting.acs-sort {
+    background: url(../image/sprite-icon/table-arrow-down.svg) no-repeat right center;
+}
+.custom-sorting.dec-sort {
+    background: url(../image/sprite-icon/table-arrow-down2.svg) no-repeat right center;
+}
+.dataTables_scrollBody thead {
+    display: none !important;
+}
+.table-showing-entries {
+    padding: 10px 15px 10px;
+    margin-right: 70px;
+}
+.table-showing-entries label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+.table-showing-entries .form-control {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+.table-showing-entries .form-control.page-length {
+    max-width: 75px;
+}
+button.del {
+    background: none;
+    border: none;
+    outline: 0;
+}
+.datatable-custom-pagination button.next,
+.datatable-custom-pagination button.prev,
+.datatable-custom-pagination button.first,
+.datatable-custom-pagination button.last {
+    width: auto;
+    padding: 0 20px;
+}
+.datatable-custom-pagination button:first-child {
+    margin: 0;
+}
+.datatable-custom-pagination button.active {
+    background: #3f2355;
+    color: #fff;
+}
+.dealer-billing-ListHead {
+    margin-top: 30px !important;
+    margin: 0 0 30px 0;
+    padding: 0;
+    color: #828385;
+    border-bottom: 1px solid #eaeaeb;
+    padding: 0px 0px 20px 0px;
+}
+.dealer-billing-ListHead h1 {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-family: "basis_grotesque_probold";
+    font-weight: bold;
+    font-size: 28px;
+    color: #3f2355;
+    text-align: left;
+    text-decoration: none;
+    line-height: 35px;
+}
+.dealer-billing-ListHead span {
+    color: #828385;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "basis_grotesque_probold";
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.dealer-billing-left {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+.dealer-billing-application {
+    height: 232.02px;
+    background: #fff;
+    border: 1px solid #eeeff1;
+    border-radius: 6px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.dealer-billing-right {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+.dealer-billing-payment {
+    height: 232.02px;
+    background: #fff;
+    border: 1px solid #eeeff1;
+    border-radius: 6px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.innerDealerBilling {
+    padding: 13px;
+}
+.innerDealerBilling .innerBillingHeader {
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+.innerDealerBilling .innerBillingHeader h1 {
+    width: 150px;
+    left: 275px;
+    top: 238px;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #111827;
+}
+.sel_v{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    /* padding-right: 20px; */
+    padding-bottom: 20px;
+    display: flex;
+}
+.kikk{
+width: 100%;
+/* font-weight: 700; */
+font-size: 14px;
+}
+.sel_sb_type{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* justify-content: space-between; */
+    /* padding-right: 20px; */
+    padding-bottom: 10px;
+    display: flex;
+    font-size: 15px;
+}
+.lllll{
+    display: flex;
+    flex-wrap: wrap;
+}
+.update_vel_colr{
+    background-color: #ffece4;
+}
+.gray_clr{
+    background-color: #f9fafb;
+}
+.first_colr_v{
+    background-color: #f9fafb;
+}
+.v_cards{
+    margin-right: 10px;
+    margin-left: 14px;
+ 
+    width: 22%;
+    padding-top: 10px;
+    border-radius: 4px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+/* margin-bottom: 20px; */
+/* padding-left: 15px;
+padding-right: 15px; */
+
+}
+.innerDealerBilling .innerBillingHeader h5 {
+    font-weight: 500;
+    font-size: 18px;
+    color: #111827;
+    line-height: 25px;
+}
+.innerDealerBilling .innerBillingHeader span {
+    font-family: "basis_grotesque_probold";
+    font-size: 14px;
+    color: #8c94a3;
+}
+.innerDealerBilling .innerBillingHeader p {
+    font-size: 14px;
+    color: #8c94a3;
+}
+.innerDealerBilling .innerBilling-container-application {
+    margin: 20px 0px 0px 0px;
+}
+.innerDealerBilling .innerBilling-container-payment {
+    height: 98px;
+    border: 1px solid #e4e7ec;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.innerDealerBilling .innerBilling-container-payment .add-payment-div {
+    padding: 30px;
+}
+.innerDealerBilling .innerBilling-container-payment .add-payment-div span {
+    font-family: "basis_grotesque_probold";
+    color: #7a8294;
+    margin-left: 5px;
+}
+.innerDealerBilling .innerBilling-container-payment .selected-payment-card-view {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.innerDealerBilling .innerBilling-container-payment .selected-payment-card-view .selected-payment-card-view-left {
+    width: 57px;
+    height: 41px;
+    margin: 10px 0px 0px 0px;
+    background: #fff;
+    border: 1px solid #f2f4f7;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.innerDealerBilling .innerBilling-container-payment .selected-payment-card-view .selected-payment-card-view-middle {
+    width: 398px;
+    margin-left: 10px;
+}
+.innerDealerBilling .innerBilling-container-payment .selected-payment-card-view .selected-payment-card-view-middle h1 {
+    height: 19px;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    color: #344054;
+}
+.innerDealerBilling .innerBilling-container-payment .selected-payment-card-view .selected-payment-card-view-middle h2 {
+    height: 22px;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #8c94a3;
+}
+.innerDealerBilling .innerBilling-container-payment .selected-payment-card-view .selected-payment-card-view-middle .email span {
+    width: 125px;
+    height: 22px;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 160%;
+    margin-left: 5px;
+    color: #7a8294;
+}
+.innerDealerBilling .innerBilling-container-payment .selected-payment-card-view .selected-payment-card-view-right {
+    width: 57px;
+    height: 41px;
+    margin: 12px 0px 0px 0px;
+    background: #fff;
+    border: 1px solid #d0d5dd;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.innerDealerBilling .innerBilling-container-payment .selected-payment-card-view .selected-payment-card-view-right button {
+    width: 26px;
+    height: 22px;
+    font-family: "basis_grotesque_probold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 10px 0px 0px;
+    color: #4e5869;
+    background: none;
+    border: none;
+}
+.remove_btn {
+    width: 80px !important;
+    margin-left: 10px !important;
+}
+.edit_btn {
+    width: 50px !important;
+}
+.payment__method {
+    width: 54% !important;
+}
+.konnn{
+max-width: 150px !important;
+}

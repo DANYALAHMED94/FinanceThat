@@ -1,0 +1,506 @@
+.flexBetweenCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexCenter {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.PostApp-Head .textErrorMessage {
+  font: 12px "basis_grotesque_probold";
+  color: #fb5100;
+  text-align: left;
+}
+
+/* post app quick */
+.postAppQuick {
+  padding: 0 20px;
+}
+.postAppQuick .formDiv {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 40px;
+  /* box-shadow: 0 8px 64px rgba(108, 126, 147, 0.09); */
+  min-height: 667px;
+  padding: 36px 10px;
+  border-radius: 4px;
+}
+.postAppQuick .formDiv .innerDiv {
+  width: 100%;
+  max-width: 993px;
+  height: 100%;
+  margin: 0 auto;
+}
+.postAppQuick .formDiv .progressBar {
+  width: 100%;
+  height: 10px;
+  background-color: #f1f3f5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.postAppQuick .formDiv .progressBar .filled {
+  height: 10px;
+  background-color: #fb5100;
+  transition: all 0.4s ease-in-out;
+}
+.postAppQuick .formDiv .formWrapper {
+  padding: 30px 20px;
+}
+.postAppQuick .formDiv .formWrapper h1 {
+  font: 16px "basis_grotesque_probold";
+  color: #3f2355;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.postAppQuick .formWrapper .optionFlex {
+  max-width: 640px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.postAppQuick .formWrapper .optionFlex .item {
+  width: 300px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #fb5100;
+  color: #fb5100;
+  border-radius: 8px;
+  background-color: transparent;
+  font: 16px "basis_grotesque_probold";
+  padding: 0 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  margin: 0 auto;
+  margin-bottom: 17px;
+}
+.postAppQuick .formWrapper .optionFlex .item:hover {
+  color: #fff;
+  background-color: #fb5100;
+}
+.postAppQuick .formWrapper .optionFlex .item.active {
+  color: #fff;
+  background-color: #fb5100;
+}
+.postAppQuick .formWrapper .optionFlex .item img {
+  margin-right: 40px;
+  width: 50px !important;
+}
+.postAppQuick .formWrapper .continueBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 315px;
+  width: 100%;
+  height: 56px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+.postAppQuick .formWrapper .continueBtn:disabled {
+  background-color: #d1d3d6;
+  border-color: #d1d3d6;
+}
+.postAppQuick .formWrapper p {
+  text-align: center;
+  max-width: 764px;
+  margin: 0 auto;
+  color: #828385 !important;
+  font: 10px "basis_grotesque_proregular";
+}
+.notMeetingCriteria {
+  background-color: #f9d9cc;
+  min-height: 286px;
+  max-width: 772px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 90px;
+  padding: 70px 10px 65px;
+}
+.notMeetingCriteria h4 {
+  max-width: 572px;
+  font: 12px "basis_grotesque_proregular";
+  text-align: center;
+  margin: 0 auto 20px;
+}
+.notMeetingCriteria .btnSec {
+  flex-direction: column;
+}
+.notMeetingCriteria .btnSec .continueBtn {
+  margin: 10px auto 10px;
+}
+.notMeetingCriteria .btnSec .continueBtn span {
+  color: #fff !important;
+}
+
+.notMeetingCriteria span {
+  color: #fb5100;
+  font-family: "basis_grotesque_probold";
+}
+.postAppQuick .formWrapper .optionFlex .textInput {
+  width: 100%;
+  height: 96px;
+  border: 1px solid #cbcbcb;
+  color: #3f2355;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  font: 20px "basis_grotesque_probold";
+  padding-left: 20px;
+}
+.postAppQuick .formWrapper .optionFlex .textInput::placeholder {
+  color: #a4a4a4;
+}
+.postAppQuick .formWrapper .optionFlex .textInput:focus-visible {
+  outline: #fb5100 solid 2px;
+  box-shadow: 0 0 12px rgba(251, 81, 0, 0.5);
+}
+.postAppQuick .formWrapper .optionFlex .inputDiv {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+}
+.postAppQuick .formWrapper .optionFlex .inputDiv.required .textInput {
+  border: 3px solid #dc3545;
+}
+
+.postAppQuick .formWrapper .inputDiv.required .invalid-feedback {
+  display: block;
+  border-radius: 0.5rem 0 0.5rem 0;
+  bottom: 0;
+  color: #fff !important;
+  padding: 0.15rem 0.35rem;
+  pointer-events: none;
+  position: absolute;
+  right: 0px;
+}
+.postAppQuick .formWrapper .textInput.select {
+  background: url("../../assets/image/arrowSelectDropDown.svg") no-repeat right
+    rgba(200, 200, 200, 0.2);
+  -webkit-appearance: none;
+  background-position-x: 98%;
+}
+.postAppQuick .formWrapper .textInput.select.placeholder {
+  color: #a4a4a4;
+}
+.postAppQuick .formWrapper .textInput.select option {
+  color: #3f2355;
+}
+.postAppQuick .formWrapper h3 {
+  color: #644e77;
+  font: 16px "basis_grotesque_probold";
+  text-align: center;
+  margin: 10px 0;
+}
+.postAppQuick .formWrapper.postSuccess h1 {
+  font: 30px "basis_grotesque_probold";
+  margin-bottom: 10px;
+}
+.textcheckbox{
+  display: flex;
+  margin-left: auto;
+  width: 63%;
+  margin-right: auto;
+}
+.postAppQuick .formWrapper.postSuccess h2 {
+  font: 22px "BasisGrotesquePro-Medium";
+  margin: 26px auto 7px;
+  color: #5b5b5c;
+  text-align: center;
+  max-width: 411px;
+  line-height: 46px;
+}
+.margin-class{
+margin-left: 10px !important;
+}
+.postAppQuick .formWrapper.postSuccess h2 span {
+  font: 32px "basis_grotesque_probold";
+  color: #81db0f;
+}
+.postAppQuick .formWrapper.postSuccess h5 {
+  font: 36px "basis_grotesque_probold";
+  margin-bottom: 40px;
+  color: #fb5100;
+  text-align: center;
+}
+.postAppQuick .formWrapper.postSuccess p {
+  margin-bottom: 7px;
+  color: #5b5b5c;
+  margin-top: 20px;
+}
+.postAppQuick .formWrapper .skipSec {
+  display: flex;
+  align-items: center;
+  max-width: 480px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  position: relative;
+}
+.postAppQuick .formWrapper .skipSec .skipButton {
+  background-color: transparent;
+  border: none;
+  font: 16px "basis_grotesque_probold";
+  color: #3f2355;
+  width: 100%;
+}
+.postAppQuick .formWrapper.verification h1 {
+  margin-bottom: 8px;
+}
+.img__wrapper{
+  display: block;
+  width: 50%;
+}
+.postAppQuick .formWrapper.verification h3 {
+  font: 16px "basis_grotesque_proregular";
+  color: #3f2355;
+  margin: 0 auto 15px;
+}
+@media only screen and (max-width: 576px) {
+  .postAppQuick .formWrapper p{
+    font-size: 8px !important;
+  }
+  .textcheckbox{
+    width: 96% !important;
+    display: flex;
+    margin-left: auto;
+    /* width: 96%; */
+    margin-right: auto;
+  }
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .postAppQuick .formWrapper .optionFlex .item img {
+    margin-right: 50px;
+    width: auto;
+}
+.applyNowMain .primaryButton~p{
+  color: #3f2355 !important;
+}
+/* .postAppQuick .formWrapper .optionFlex .item img.vehicle {
+  margin-right: 40px;
+} */
+  .PostApp-Head .textErrorMessage {
+    font: 16px "basis_grotesque_probold";
+    color: #fb5100;
+  }
+  .postAppQuick .formDiv {
+    padding: 36px 40px;
+  }
+
+  .postAppQuick .formDiv .formWrapper h1 {
+    font: 24px "basis_grotesque_probold";
+  }
+  .postAppQuick .formWrapper .optionFlex .item {
+    height: 96px;
+    font: 20px "basis_grotesque_probold";
+    padding: 0 20px;
+  }
+  .postAppQuick .formWrapper .optionFlex .item img {
+    margin-right: 50px;
+    /* height: 60px; */
+    width: auto !important;
+  }
+  /* .postAppQuick .formWrapper .optionFlex .item img.vehicle {
+    margin-right: 40px;
+  } */
+  .postAppQuick .formWrapper p {
+    font: 14px "basis_grotesque_proregular";
+  }
+  .notMeetingCriteria h4 {
+    font: 16px "basis_grotesque_proregular";
+  }
+  .postAppQuick .formWrapper h3 {
+    font: 20px "basis_grotesque_probold";
+  }
+  .postAppQuick .formWrapper.postSuccess h1 {
+    font: 40px "basis_grotesque_probold";
+  }
+  .postAppQuick .formWrapper .skipSec .skipButton {
+    position: absolute;
+    bottom: 33px;
+    right: 0;
+    width: fit-content;
+    font: 18px "basis_grotesque_probold";
+  }
+  .postAppQuick .formWrapper.verification h3 {
+    font: 20px "basis_grotesque_proregular";
+  }
+  .notMeetingCriteria .btnSec .backBtn {
+    max-width: 248px;
+  }
+  .notMeetingCriteria .btnSec .exitBtn {
+    max-width: 315px;
+  }
+  .notMeetingCriteria .btnSec {
+    flex-direction: row;
+  }
+  .notMeetingCriteria .btnSec .continueBtn {
+    margin: 20px 10px 20px;
+  }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* Spinner Css */
+.sk-fading-circle {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.sk-fading-circle .sk-circle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.sk-fading-circle .sk-circle:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+  height: 15%;
+  background-color: #fb5100;
+  border-radius: 100%;
+  -webkit-animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+  animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+}
+.sk-fading-circle .sk-circle2 {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.sk-fading-circle .sk-circle3 {
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+.sk-fading-circle .sk-circle4 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.sk-fading-circle .sk-circle5 {
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.sk-fading-circle .sk-circle6 {
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+.sk-fading-circle .sk-circle7 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.sk-fading-circle .sk-circle8 {
+  -webkit-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  transform: rotate(210deg);
+}
+.sk-fading-circle .sk-circle9 {
+  -webkit-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+.sk-fading-circle .sk-circle10 {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.sk-fading-circle .sk-circle11 {
+  -webkit-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+.sk-fading-circle .sk-circle12 {
+  -webkit-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  transform: rotate(330deg);
+}
+.sk-fading-circle .sk-circle2:before {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+.sk-fading-circle .sk-circle3:before {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+.sk-fading-circle .sk-circle4:before {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+.sk-fading-circle .sk-circle5:before {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+.sk-fading-circle .sk-circle6:before {
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s;
+}
+.sk-fading-circle .sk-circle7:before {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+.sk-fading-circle .sk-circle8:before {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+.sk-fading-circle .sk-circle9:before {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+.sk-fading-circle .sk-circle10:before {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+.sk-fading-circle .sk-circle11:before {
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}
+.sk-fading-circle .sk-circle12:before {
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
+}
+
+@-webkit-keyframes sk-circleFadeDelay {
+  0%,
+  39%,
+  100% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+@keyframes sk-circleFadeDelay {
+  0%,
+  39%,
+  100% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}

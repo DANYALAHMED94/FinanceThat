@@ -1,0 +1,297 @@
+.mobileNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background-color: #fff;
+  box-shadow: 0px 20px 60px rgba(38, 47, 86, 0.04);
+}
+.mobileNav .navbar-logo {
+  width: 127px;
+}
+.mobileNav .navbar-logo img {
+  width: 100%;
+}
+.mobileNav .actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mobileNav .actions .carIcon {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.mobileNav .actions .carIcon img {
+  height: 27px;
+  width: 27px;
+}
+.mobileNav .actions .carIcon:focus {
+  outline: none;
+}
+.mobileNav .actions .userIcon {
+  height: 27px;
+  width: 27px;
+  margin-right: 8px;
+  margin-left: 10px;
+}
+.mobileNav .actions .menueBurger {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.mobileNav .actions .menueBurger .line {
+  height: 2px;
+  width: 20px;
+  background-color: #644e77;
+  margin-bottom: 5px;
+  transform: translateY(0);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s ease-out;
+}
+.mobileNav .actions .menueBurger.open .line {
+  background: #fb5100;
+}
+.mobileNav .actions .menueBurger .line.line2 {
+  width: 27px;
+}
+.mobileNav .actions .menueBurger .line.line3 {
+  margin-bottom: 0px;
+}
+.mobileNav .actions .menueBurger.open .line.line1 {
+  transform: translateY(6px) rotateZ(-137deg);
+  width: 26px;
+}
+.mobileNav .actions .menueBurger.open .line.line2 {
+  opacity: 0;
+}
+.mobileNav .actions .menueBurger.open .line.line3 {
+  transform: translateY(-6px) rotateZ(135deg);
+  width: 25px;
+}
+
+/* singup header user */
+.mobileNav .sign-up-header-dropdown {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-color: #f5f7fa;
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+  visibility: hidden;
+  opacity: 0;
+  transition: all linear 0.3s;
+  top: 70px;
+  right: 0;
+  z-index: 999;
+  border-radius: 4px;
+  padding: 20px 20px;
+}
+.mobileNav .sign-up-header-dropdown.open {
+  opacity: 1;
+  transform: translateY(0px);
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+}
+.mobileNav .sign-up-header-dropdown .sign-in-button {
+  border-radius: 4px;
+  font: 14px "basis_grotesque_probold";
+  min-width: 258px;
+  width: 80%;
+  height: 40px;
+  background: #fb5100;
+  border: 1px solid #fb5100;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  -webkit-transition: all ease-in 0.3s;
+  -moz-transition: all ease-in 0.3s;
+  -o-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+.sign-up-header-dropdown .sign-in-button:hover {
+  background: #3f2355;
+  border: 1px solid #3f2355;
+}
+.sign-up-header-dropdown .textHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 10px;
+}
+.sign-up-header-dropdown .textHeader h4 {
+  font: 18px "basis_grotesque_probold";
+  color: #3f2355;
+}
+.sign-up-header-dropdown .textHeader i {
+  font-size: 18px;
+  color: #3f2355;
+}
+.mobileNav .sign-up-header-dropdown p {
+  margin: 10px 0 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #3f2355;
+}
+.mobileNav .sign-up-header-dropdown p .nav-link {
+  font-family: "basis_grotesque_probold";
+  color: #fb5100;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.mobileNav .howItWorks {
+  position: absolute;
+  width: 100%;
+  height: 368px;
+  background-color: #fff;
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+  visibility: hidden;
+  opacity: 0;
+  transition: all linear 0.3s;
+  top: 70px;
+  right: 0;
+  z-index: 999;
+  padding: 10px 32px 32px;
+  border-top: 1px solid #eeeef0;
+  border-bottom: 1px solid #eeeef0;
+}
+.mobileNav .howItWorks.open {
+  opacity: 1;
+  transform: translateY(0px);
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+}
+.mobileNav .howItWorks h1 {
+  color: #fb5100;
+  font: 15px "basis_grotesque_probold";
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.mobileNav .howItWorks .item {
+  display: block;
+  color: #3f2355;
+  font: 15px "BasisGrotesquePro-Medium";
+  padding: 15px 0;
+  border-bottom: 1px solid #eeeef0;
+  cursor: pointer;
+}
+.mobileNav .howItWorks .postAd {
+  margin: 36px auto 23px;
+  border-radius: 4px;
+  font: 16px "basis_grotesque_probold";
+  min-width: 294px;
+  width: 80%;
+  height: 46px;
+  background: transparent;
+  border: 2px solid #fb5100;
+  box-sizing: border-box;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fb5100;
+  -webkit-transition: all ease-in 0.3s;
+  -moz-transition: all ease-in 0.3s;
+  -o-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+.mobileNav .howItWorks .getFinancing {
+  margin: 0 auto;
+  border-radius: 4px;
+  font: 16px "basis_grotesque_probold";
+  min-width: 294px;
+  width: 80%;
+  height: 46px;
+  background: #fb5100;
+  border: 1px solid #fb5100;
+  box-sizing: border-box;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  -webkit-transition: all ease-in 0.3s;
+  -moz-transition: all ease-in 0.3s;
+  -o-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+.mobileNav .howItWorks .getFinancing:hover {
+  background: #3f2355;
+  border: 1px solid #3f2355;
+}
+
+.mobileNav .carHeaderDropDown {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+  visibility: hidden;
+  opacity: 0;
+  transition: all linear 0.3s;
+  top: 70px;
+  right: 0;
+  z-index: 999;
+  padding: 0 20px;
+  border-top: 1px solid #eeeef0;
+  border-bottom: 1px solid #eeeef0;
+}
+
+.mobileNav .carHeaderDropDown.open {
+  opacity: 1;
+  transform: translateY(0px);
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+}
+.mobileNav .carHeaderDropDown .item {
+  display: flex;
+  align-items: center;
+  color: #3f2355;
+  font: 15px "BasisGrotesquePro-Medium";
+  padding: 12px 0;
+  border-bottom: 1px solid #eeeef0;
+  cursor: pointer;
+}
+.mobileNav .carHeaderDropDown span {
+  margin-left: 10px;
+}
+
+/* logged in user */
+.mobileNav .messageSec .messageIcon {
+  width: 27px;
+  margin-right: 10px;
+}
+
+.mobileNav .Profiledropdown:hover .dropdownMenu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(30px);
+}
+.mobileNav .Profiledropdown.active .dropdownMenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px) !important;
+}
+.mobileNav .Profiledropdown .dropdownMenu {
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 66px;
+}
+.mobileNav .Profiledropdown .dropdownMenu .logout {
+  width: 90%;
+}

@@ -1,0 +1,521 @@
+/* trustpilot css */
+.SocialMedia-Icon ul li a.trustPilotDiv {
+  background: transparent;
+  width: 150px;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+}
+/* apply now css */
+.applyNowMain .bannerSec {
+  height: auto;
+}
+.applyNowMain .bannerSec .contentWrapper {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.applyNowMain .bannerSec .subBanner {
+  max-width: 1012px;
+  max-height: 615px;
+  border-radius: 20px;
+  position: relative;
+}
+.applyNowMain .bannerSec .subBanner img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+.applyNowMain .bannerSec .subBanner .bannertext {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  flex-direction: column;
+}
+.applyNowMain .bannerSec .subBanner .bannertext h1 {
+  color: #ffffff;
+  font: 20px "BasisGrotesquePro-Black";
+}
+.applyNowMain .bannerSec .subBanner .bannertext h5 {
+  color: #ffffff;
+  font: 14px "basis_grotesque_probold";
+  text-align: center;
+  letter-spacing: 1px;
+}
+.applyNowMain .bannerSec .menuList {
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 15px 30px 90px rgba(125, 149, 169, 0.1);
+  padding: 10px 20px 10px;
+  margin: 0 auto;
+}
+.applyNowMain .bannerSec .menuList .item {
+  display: flex;
+  align-items: center;
+  font: 14px "basis_grotesque_probold";
+  margin-bottom: 10px;
+  color: #3f2355;
+}
+.applyNowMain .bannerSec .menuList .item .circle {
+  background-color: #31bd00;
+  color: #fff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.primaryButton {
+  margin: 0;
+  padding: 0;
+  background: #fb5100;
+  border: 1px solid #fb5100;
+  box-sizing: border-box;
+  border-radius: 6px;
+  outline: none;
+  font-family: "basis_grotesque_probold";
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  height: 42px;
+  -webkit-transition: all ease-in 0.3s;
+  -moz-transition: all ease-in 0.3s;
+  -o-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+  margin-top: 30px;
+  margin-bottom: 7px;
+}
+.primaryButton img {
+  width: 20px;
+  margin-right: 7px;
+}
+
+.primaryButton:hover {
+  background: #3f2355;
+  border: 1px solid #3f2355;
+}
+
+.applyNowMain .primaryButton ~ p {
+  color: #3f2355;
+  font: 11px "basis_grotesque_probold";
+  text-align: center;
+}
+
+/* Fiannce Everything */
+.fiananceEverything .secWrapper {
+  box-shadow: 16px 34px 84px rgba(19, 27, 38, 0.06);
+  border: 3px solid #eeeef0;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.fiananceEverything .vehicalSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 35px;
+}
+.fiananceEverything .vehicalSec .primaryButton {
+  width: 100%;
+}
+.fiananceEverything .vehicalSec h1 {
+  color: #fb5100;
+  font: 22px "basis_grotesque_probold";
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.fiananceEverything .vehicalSec .vehicalFlexWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.fiananceEverything .vehicalSec .vehicalFlexWrapper .item {
+  margin: 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex: 0 0 33.333333%;
+}
+.fiananceEverything .vehicalSec .vehicalFlexWrapper .item h3 {
+  font: 18px "BasisGrotesquePro-Medium";
+  color: #644e77;
+}
+.fiananceEverything .videoSec {
+  height: 100%;
+  width: 100%;
+  padding: 20px 20px;
+  background-color: #ffece4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* how it works */
+
+.applyNowMain .howItWorks {
+  max-width: 1600px;
+  margin: 30px auto 50px;
+}
+.applyNowMain .howItWorks h1 {
+  text-align: center;
+  font: 22px "basis_grotesque_probold";
+  color: #fb5100;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.applyNowMain .howItWorks .item {
+  margin-bottom: 20px;
+}
+.applyNowMain .howItWorks .item img {
+  margin: 0 auto;
+}
+.applyNowMain .howItWorks .item .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  background-color: #3f2355;
+  font: 28px "basis_grotesque_probold";
+  color: #fff;
+  flex-shrink: 0;
+}
+.applyNowMain .howItWorks .item .flexCenter {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}
+.applyNowMain .howItWorks .item h2 {
+  color: #3f2355;
+  font: 24px "basis_grotesque_probold";
+  margin-bottom: 20px;
+}
+.applyNowMain .howItWorks .item .content {
+  margin-left: 20px;
+}
+.applyNowMain .howItWorks .primaryButton {
+  max-width: 415px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+/* apply Feature */
+.applyNowMain .applyFeature {
+  background-color: #3f2355;
+}
+.applyNowMain .applyFeature .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  padding: 70px 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+.applyNowMain .applyFeature .wrapper img:nth-child(2) {
+  max-height: 61px;
+  margin-left: 37px;
+}
+.applyNowMain .buttonWrapper {
+  padding: 0 0 40px;
+  text-align: center;
+  width: 100%;
+}
+.applyNowMain .buttonWrapper .primaryButton {
+  width: 100%;
+  max-width: 415px;
+}
+.facebook-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.facebook-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 768px) {
+  .applyNowMain .howItWorks h1 {
+    font: 36px "basis_grotesque_probold";
+    margin-bottom: 60px;
+    margin-top: 90px;
+  }
+
+  .applyNowMain .bannerSec {
+    height: 720px;
+    padding-top: 50px;
+  }
+  .applyNowMain .contentWrapper {
+    width: fit-content;
+  }
+  .applyNowMain .bannerSec .subBanner {
+    width: 700px;
+  }
+
+  .applyNowMain .bannerSec .menuList {
+    position: absolute;
+    bottom: -200px;
+  }
+  .applyNowMain .bannerSec .subBanner .bannertext h1 {
+    color: #ffffff;
+    font: 40px "BasisGrotesquePro-Black";
+  }
+  .applyNowMain .bannerSec .subBanner .bannertext h5 {
+    color: #ffffff;
+    font: 14px "basis_grotesque_probold";
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .applyNowMain .bannerSec .menuList .item {
+    display: flex;
+    align-items: center;
+    font: 14px "basis_grotesque_probold";
+    margin-bottom: 10px;
+    color: #3f2355;
+  }
+  .applyNowMain .bannerSec .menuList .item .circle {
+    background-color: #31bd00;
+    color: #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .primaryButton {
+    font-size: 14px;
+    width: 100%;
+    height: 42px;
+  }
+  .primaryButton img {
+    width: 20px;
+    margin-right: 7px;
+  }
+
+  .applyNowMain .primaryButton ~ p {
+    color: #3f2355;
+    /* font: 12px "basis_grotesque_probold"; */
+    text-align: center;
+  }
+  /* Fiannce Everything */
+  .fiananceEverything {
+    background-color: transparent;
+  }
+  .fiananceEverything .vehicalSec {
+    background-color: #fff;
+    padding: 30px 90px;
+  }
+  .fiananceEverything .vehicalSec .primaryButton {
+    width: 100%;
+    max-width: 415px;
+  }
+  .fiananceEverything .vehicalSec h1 {
+    font: 42px "basis_grotesque_probold";
+    margin-bottom: 40px;
+  }
+
+  .fiananceEverything .vehicalSec .vehicalFlexWrapper .item {
+    margin: 30px 0 30px;
+    flex: 0 0 33.333333%;
+  }
+  .fiananceEverything .vehicalSec .vehicalFlexWrapper .item h3 {
+    font: 18px "BasisGrotesquePro-Medium";
+  }
+  .fiananceEverything .videoSec {
+    padding: 10px 40px;
+  }
+
+  .applyNowMain .buttonWrapper .primaryButton {
+    width: 415px;
+  }
+
+  /* trustpilot css */
+  .SocialMedia-Icon ul li a.trustPilotDiv {
+    width: 200px;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1110px) {
+  .fiananceEverything {
+    margin-top: -100px;
+  }
+
+  .applyNowMain .bannerSec {
+    height: 720px;
+    padding-top: 50px;
+  }
+  .applyNowMain .contentWrapper {
+    width: 900px !important ;
+  }
+  .applyNowMain .bannerSec .subBanner {
+    width: 700px;
+  }
+
+  .applyNowMain .bannerSec .menuList {
+    width: 320px;
+    padding: 20px 20px 0px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -5%;
+    height: fit-content;
+  }
+  .applyNowMain .bannerSec .subBanner .bannertext h1 {
+    color: #ffffff;
+    font: 40px "BasisGrotesquePro-Black";
+  }
+  .applyNowMain .bannerSec .subBanner .bannertext h5 {
+    color: #ffffff;
+    font: 14px "basis_grotesque_probold";
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .applyNowMain .howItWorks .primaryButton {
+    max-width: 415px;
+    width: 415px;
+  }
+}
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1920px) {
+  .applyNowMain .bannerSec {
+    height: 826px;
+  }
+  .applyNowMain .contentWrapper {
+    width: 1360px !important;
+  }
+  .applyNowMain .bannerSec .subBanner {
+    width: 1012px;
+    height: 615px;
+  }
+
+  .applyNowMain .bannerSec .subBanner .bannertext h1 {
+    color: #ffffff;
+    font: 64px "BasisGrotesquePro-Black";
+  }
+  .applyNowMain .bannerSec .subBanner .bannertext h5 {
+    color: #ffffff;
+    font: 18px "basis_grotesque_probold";
+    text-align: center;
+    letter-spacing: 3.5px;
+  }
+  .applyNowMain .bannerSec .menuList {
+    width: 527px;
+    padding: 40px 50px;
+    /* right: -50%; */
+  }
+  .applyNowMain .bannerSec .menuList .item {
+    display: flex;
+    align-items: center;
+    font: 20px "basis_grotesque_probold";
+    margin-bottom: 20px;
+    color: #3f2355;
+  }
+  .applyNowMain .bannerSec .menuList .item .circle {
+    background-color: #31bd00;
+    color: #fff;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    font-size: 14px;
+  }
+
+  .primaryButton {
+    margin: 0;
+    padding: 0;
+    background: #fb5100;
+    border: 1px solid #fb5100;
+    box-sizing: border-box;
+    border-radius: 6px;
+    outline: none;
+    font-family: "basis_grotesque_probold";
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 62px;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+    margin-top: 30px;
+    margin-bottom: 7px;
+  }
+  .primaryButton img {
+    width: 29px;
+    margin-right: 7px;
+  }
+
+  .applyNowMain .primaryButton ~ p {
+    color: #3f2355;
+    font: 14px "basis_grotesque_probold";
+    text-align: center;
+  }
+
+  /* Fiannce Everything */
+
+  .fiananceEverything .vehicalSec {
+    padding: 40px 117px;
+  }
+  .fiananceEverything .vehicalSec .primaryButton {
+    width: 415px;
+  }
+  .fiananceEverything .vehicalSec h1 {
+    font: 42px "basis_grotesque_probold";
+    margin-bottom: 40px;
+  }
+
+  .fiananceEverything .vehicalSec .vehicalFlexWrapper .item {
+    margin: 30px 0 30px;
+    flex: 0 0 33.333333%;
+  }
+  .fiananceEverything .vehicalSec .vehicalFlexWrapper .item h3 {
+    font: 18px "BasisGrotesquePro-Medium";
+  }
+  .fiananceEverything .videoSec {
+    padding: 40px 117px;
+    background-color: #ffece4;
+  }
+  .primaryButton {
+    width: 415px;
+  }
+  /* trustpilot css */
+  .SocialMedia-Icon ul li a.trustPilotDiv {
+    width: 250px;
+  }
+}

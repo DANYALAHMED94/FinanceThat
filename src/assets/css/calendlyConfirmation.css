@@ -1,0 +1,114 @@
+.calendlyConfirmationWrapper .logoSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+   
+   }
+   .calendlyConfirmationWrapper .logoSec img{
+   width: 127px;
+   }
+   .calendlyConfirmationWrapper .modalSec{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       border: 1px solid #D1D3D6;
+       box-shadow: 0 0 44px 7px rgba(19, 27, 38, 0.06);
+       max-width: 1336px;
+       width: 90%;
+       margin: 30px 20px;
+       border-radius: 20px;
+       min-height: 60vh;
+       padding: 0 20px;
+   }
+   .calendlyConfirmationWrapper .modalSec h1{
+   font: 26px "basis_grotesque_probold";
+   color: #FB5100;
+   }
+   .calendlyConfirmationWrapper .modalSec h2{
+   font: 16px "basis_grotesque_proregular";
+   color: #3F2355;
+   margin-bottom: 30px;
+   }
+   .calendlyConfirmationWrapper .modalSec h3{
+   font: 14px "BasisGrotesquePro-Medium";
+   max-width: 545px;
+   color: #000000;
+   margin-bottom: 50px;
+   }
+   .calendlyConfirmationWrapper  button {
+     margin: 0;
+     padding: 0;
+     background: #fb5100;
+     border: 1px solid #fb5100;
+     box-sizing: border-box;
+     border-radius: 6px;
+     outline: none;
+     font-family: "basis_grotesque_probold";
+     font-size: 22px;
+     text-align: center;
+     text-decoration: none;
+     color: #fff;
+     width: 300px;
+     height: 75px;
+     -webkit-transition: all ease-in 0.3s;
+     -moz-transition: all ease-in 0.3s;
+     -o-transition: all ease-in 0.3s;
+     transition: all ease-in 0.3s;
+   }
+   .calendlyConfirmationWrapper  button:hover {
+     background: #3f2355;
+     border: 1px solid #3f2355;
+   }
+   
+   @media screen and (max-width: 1080px) {
+   
+   
+     .calendlyConfirmationWrapper  button {
+       font-size: 14px;
+       width: 190px;
+       height: 47px;
+     }
+   }
+   
+   
+   @media screen and (max-width: 991.99px) {
+     .calendlyConfirmationWrapper  button {
+       font-size: 16px;
+       color: #fff;
+       width: 243px;
+       height: 52px;
+     }
+   
+   }
+   
+   @media (min-width: 768px) {
+   
+       .calendlyConfirmationWrapper .logoSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+   
+   }
+   .calendlyConfirmationWrapper .logoSec img{
+   width: auto;
+   }
+   .calendlyConfirmationWrapper .modalSec{
+       margin: 20px auto  40px;
+       height: 80vh;
+   }
+   .calendlyConfirmationWrapper .modalSec h1{
+   font: 36px "basis_grotesque_probold";
+   }
+   .calendlyConfirmationWrapper .modalSec h2{
+   font: 24px "basis_grotesque_proregular";
+   margin-bottom: 40px;
+   }
+   .calendlyConfirmationWrapper .modalSec h3{
+   font: 16px "BasisGrotesquePro-Medium";
+   margin-bottom: 90px;
+   }
+   
+   }
